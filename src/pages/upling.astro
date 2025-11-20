@@ -1,0 +1,209 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import CaseStudyHero from "../components/CaseStudyHero.vue";
+import CaseStudySection from "../components/CaseStudySection.vue";
+import ImageGrid from "../components/ImageGrid.vue";
+import PostItNote from "../components/PostItNote.vue";
+import ProblemSolution from "../components/ProblemSolution.vue";
+---
+
+<BaseLayout title="Upling | Portfolio">
+  <CaseStudyHero>
+    <div class="flex flex-col md:flex-row justify-between h-fit mx-auto pt-28">
+      <div class="flex flex-col w-full md:w-[45%]">
+        <div class="flex flex-col">
+          <span class="text-2xl font-medium text-[#96f9dd] m-0">Showcase</span>
+          <h1 class="text-[44px] font-bold m-0">
+            Guiding students<br />to higher education
+          </h1>
+        </div>
+
+        <div
+          class="flex justify-start gap-12 my-5 font-medium text-base flex-wrap"
+        >
+          <span>UX/UI Design</span>
+          <span>User Research</span>
+          <span>Product Design</span>
+        </div>
+
+        <div class="flex gap-5 my-5">
+          <div>
+            <p class="font-bold">Year</p>
+            <p>2022</p>
+          </div>
+          <div>
+            <p class="font-bold">Project</p>
+            <p>Upling</p>
+          </div>
+        </div>
+      </div>
+
+      <img
+        src="/images/upling/Upling 1.png"
+        alt="Upling Cover"
+        class="w-full md:w-1/2 flex justify-center items-center"
+      />
+    </div>
+
+    <ProblemSolution>
+      <template #problem>
+        The transition from secondary education is a stressful period for many
+        young people, compounded by uncertainty about future paths. Choosing a
+        course or career often happens without adequate guidance, leading to
+        suboptimal choices and potential dissatisfaction. Existing platforms
+        often lack engaging user experiences, appearing overly serious or
+        having confusing navigation, which exacerbates student anxiety.
+      </template>
+      <template #solution>
+        Upling is a digital platform conceived during a bachelor's course in
+        graphic/interaction design. Its primary goal is to provide young
+        people with an easy and interactive way to find an educational path
+        that aligns with their needs and goals. While focusing on guiding high
+        school seniors towards higher education or the job market, it also
+        aims to serve college students and professionals seeking new skills.
+      </template>
+    </ProblemSolution>
+
+    <div class="mt-12 flex flex-col md:flex-row gap-8 items-start">
+      <div class="w-full md:w-1/2">
+        <img
+          src="/images/upling/hero-bg.png"
+          alt="Upling Hero Background"
+          class="w-full h-auto object-cover object-center rounded-card"
+        />
+      </div>
+      <div class="flex flex-col gap-4 w-full md:w-1/2">
+        <img
+          src="/images/upling/journey-flow.png"
+          alt="Journey Flow"
+          class="w-full h-auto rounded-lg shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)]"
+        />
+        <div class="flex gap-3 items-start w-full">
+          <img
+            src="/images/upling/mobile-screen.png"
+            alt="Mobile Screen"
+            class="w-1/4 h-auto object-cover object-center"
+          />
+          <img
+            src="/images/upling/architecture.png"
+            alt="Architecture"
+            class="w-3/4 h-auto rounded-lg shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)]"
+          />
+        </div>
+      </div>
+    </div>
+  </CaseStudyHero>
+
+  <CaseStudySection>
+    <h2 class="text-3xl font-bold mb-4">User Needs</h2>
+    <p class="mb-4 leading-relaxed">
+      Our research focused on understanding the emotional and practical
+      challenges students face during the transition to higher education. We
+      conducted interviews with high school students to better understand how
+      they perceive the transition to higher education and the struggles they
+      face during this period.
+    </p>
+    <p class="mb-8 leading-relaxed">
+      From our research we managed to identify specific needs based on things
+      these students feel are missing:
+    </p>
+
+    <ImageGrid client:load columns={3} gap="md">
+      <PostItNote client:load color="teal" :noHeader="true">
+        <p class="font-medium mb-2">Guidance and Reduced Stress</p>
+        <p class="text-sm">
+          Students feel overwhelmed by the number of choices and the pressure to
+          make the right decision.
+        </p>
+      </PostItNote>
+      <PostItNote client:load color="teal" :noHeader="true">
+        <p class="font-medium mb-2">Community and Connection</p>
+        <p class="text-sm">
+          There's a desire to connect with peers and professionals for advice
+          and shared experiences, combating feelings of isolation.
+        </p>
+      </PostItNote>
+      <PostItNote client:load color="teal" :noHeader="true">
+        <p class="font-medium mb-2">Trust and Authenticity</p>
+        <p class="text-sm">
+          Users seek reliable, unbiased information and genuine support.
+        </p>
+      </PostItNote>
+    </ImageGrid>
+  </CaseStudySection>
+
+  <CaseStudySection>
+    <div class="flex flex-col md:flex-row gap-8 items-center">
+      <div class="flex-1">
+        <h2 class="text-3xl font-bold mb-4">User Persona</h2>
+        <p class="mb-4 leading-relaxed">
+          This is João. One of our three personas for this project.
+        </p>
+        <p class="mb-4 leading-relaxed">
+          He's your typical high school student, he likes video games and his
+          friends. He never gave much thought to the future and is now worried
+          about choosing his next step in life.
+        </p>
+        <p class="leading-relaxed">Luckily for him, Upling is here!</p>
+      </div>
+      <div class="flex-1">
+        <img
+          src="/images/upling/persona.png"
+          alt="User Persona - João"
+          class="w-full h-auto"
+        />
+      </div>
+    </div>
+  </CaseStudySection>
+
+  <CaseStudySection>
+    <div class="flex flex-col md:flex-row gap-8 items-start">
+      <div class="md:w-[440px]">
+        <h2 class="text-3xl font-bold mb-4">User Journey</h2>
+        <p class="leading-relaxed">
+          We also mapped João's journey before, during and after using Upling,
+          what he feels at different points and what features we'd need to help
+          him.
+        </p>
+      </div>
+      <div class="flex-1">
+        <img
+          src="/images/upling/user-journey.png"
+          alt="User Journey Map"
+          class="w-full h-auto"
+        />
+      </div>
+    </div>
+  </CaseStudySection>
+
+  <CaseStudySection>
+    <h2 class="text-3xl font-bold mb-8">Screens</h2>
+    <div class="flex flex-row gap-8 flex-wrap justify-center">
+      <img
+        src="/images/upling/screen-1.png"
+        alt="Upling Screen 1"
+        class="w-64 h-auto"
+      />
+      <img
+        src="/images/upling/screen-2.png"
+        alt="Upling Screen 2"
+        class="w-64 h-auto"
+      />
+      <img
+        src="/images/upling/screen-3.png"
+        alt="Upling Screen 3"
+        class="w-64 h-auto"
+      />
+      <img
+        src="/images/upling/screen-4.png"
+        alt="Upling Screen 4"
+        class="w-64 h-auto"
+      />
+      <img
+        src="/images/upling/screen-5.png"
+        alt="Upling Screen 5"
+        class="w-64 h-auto"
+      />
+    </div>
+  </CaseStudySection>
+</BaseLayout>

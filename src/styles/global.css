@@ -1,0 +1,42 @@
+@import "tailwindcss";
+
+
+
+@theme {
+  /* Custom Colors */
+  --color-orbit-purple-light: #c496f9;
+  --color-orbit-purple: #6a00ff;
+  --color-orbit-purple-dark: #350080;
+  --color-orbit-teal: #00b5ad;
+  --color-orbit-orange: #ffab40;
+  --color-orbit-blue: #626ff9;
+  --color-orbit-yellow: #fffb7d;
+  --color-orbit-dark: #212121;
+  --color-orbit-light: #f4f4f4;
+
+  /* Font Families */
+  --font-family-sans: 'IBM Plex Sans', ui-sans-serif, system-ui, sans-serif;
+  --font-family-display: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+
+  /* Custom Spacing */
+  --spacing-section: 4rem;
+
+  /* Border Radius */
+  --radius-card: 15px;
+
+  /* Breakpoints */
+  --breakpoint-tablet: 768px;
+}
+
+body {
+  font-family: var(--font-family-sans);
+  background-color: var(--color-orbit-light);
+  color: var(--color-orbit-dark);
+}
+
+/* Custom utilities for smooth transitions */
+@layer utilities {
+  .transition-smooth {
+    transition: all 0.3s ease;
+  }
+}

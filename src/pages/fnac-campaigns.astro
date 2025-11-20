@@ -1,0 +1,179 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import CaseStudyHero from "../components/CaseStudyHero.vue";
+import CaseStudySection from "../components/CaseStudySection.vue";
+---
+
+<BaseLayout title="MediaMarkt & Darty Campaigns | Portfolio">
+  <CaseStudyHero>
+    <div class="flex flex-col md:flex-row justify-between h-fit mx-auto pt-28">
+      <div class="flex flex-col w-full md:w-[45%]">
+        <div class="flex flex-col">
+          <span class="text-2xl font-medium text-orbit-purple-light m-0">Case Study</span>
+          <h1 class="text-[44px] font-bold m-0">
+            MediaMarkt & Darty<br />Campaigns
+          </h1>
+        </div>
+
+        <div class="flex justify-start gap-12 my-5 font-medium text-base flex-wrap">
+          <span>Web Design</span>
+          <span>Graphic Design</span>
+          <span>eCommerce</span>
+        </div>
+
+        <div class="flex gap-5 my-5">
+          <div>
+            <p class="font-bold">Year</p>
+            <p>2024-2025</p>
+          </div>
+          <div>
+            <p class="font-bold">Project</p>
+            <p>MediaMarkt/Darty</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- First row - Two columns -->
+    <div
+      class="flex flex-col md:flex-row gap-4 items-start justify-between mt-8"
+    >
+      <!-- Left column -->
+      <div class="w-full md:w-[49%] flex flex-col gap-8">
+        <img
+          src="/images/campaigns/3-dias-sem-iva.png"
+          alt="3 Dias Sem IVA MediaMarkt"
+          class="w-full rounded-[15px]"
+        />
+        <img
+          src="/images/campaigns/black-friday.png"
+          alt="Black Friday"
+          class="w-full rounded-lg"
+        />
+      </div>
+
+      <!-- Right column -->
+      <div class="w-full md:w-[49%] flex flex-col gap-3">
+        <img
+          src="/images/campaigns/ar-fresco.png"
+          alt="Um Sopro de Ar Fresco"
+          class="w-full rounded-[15px]"
+        />
+        <img
+          src="/images/campaigns/portes-gratis.png"
+          alt="Portes Grátis"
+          class="w-full rounded-[15px]"
+        />
+      </div>
+    </div>
+  </CaseStudyHero>
+
+  <CaseStudySection client:load>
+    <div class="flex flex-col gap-4">
+      <!-- Second row - IVA Teaser + Drop -->
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
+        <div>
+          <img
+            src="/images/campaigns/darty-iva-teaser.png"
+            alt="Darty O IVA Teaser"
+            class="w-full h-full object-cover rounded-[15px]"
+          />
+        </div>
+        <div class="col-span-1 md:col-span-3">
+          <img
+            src="/images/campaigns/darty-drop.png"
+            alt="Darty Drop"
+            class="w-full h-full object-cover rounded-[15px]"
+          />
+        </div>
+      </div>
+
+      <!-- Third row - Retomas (full width) -->
+      <div>
+        <img
+          src="/images/campaigns/darty-retomas.png"
+          alt="Darty Retomas"
+          class="w-full rounded-[15px]"
+        />
+      </div>
+
+      <!-- Fourth row - Slider Mobile + Crédito -->
+      <div class="flex flex-col md:flex-row gap-8 items-center">
+        <div class="w-full md:w-[53%]">
+          <img
+            src="/images/campaigns/preco-nao-dura.png"
+            alt="Este Preço Não Dura"
+            class="w-full h-full object-cover rounded-[15px]"
+          />
+        </div>
+        <div class="w-full md:w-[44%]">
+          <img
+            src="/images/campaigns/credito.png"
+            alt="Darty Crédito"
+            class="w-full h-full object-cover rounded-[15px]"
+          />
+        </div>
+      </div>
+
+      <!-- Fifth row - Dyson banner (full width) -->
+      <div>
+        <img
+          src="/images/campaigns/darty-dyson.png"
+          alt="Darty Dyson"
+          class="w-full rounded-[15px]"
+        />
+      </div>
+
+      <!-- Sixth row - Apple Week + Aspiração -->
+      <div class="flex flex-col md:flex-row gap-9 items-center">
+        <div class="w-full md:w-[53%]">
+          <img
+            src="/images/campaigns/apple-week.png"
+            alt="Apple Week"
+            class="w-full aspect-square object-cover rounded-[8px]"
+          />
+        </div>
+        <div class="w-full md:w-[43%]">
+          <img
+            src="/images/campaigns/especial-aspiracao.png"
+            alt="Especial Aspiração"
+            class="w-full h-full object-cover rounded-[15px]"
+          />
+        </div>
+      </div>
+
+      <!-- Last row - Outono + Product categories -->
+      <div class="flex flex-col md:flex-row gap-3 items-center">
+        <div class="w-full md:w-[49%]">
+          <img
+            src="/images/campaigns/outono-complicado.png"
+            alt="Outono Complicado"
+            class="w-full h-[190px] object-cover rounded-[15px]"
+          />
+        </div>
+        <div class="flex gap-3">
+          <img
+            src="/images/campaigns/watches.png"
+            alt="Watches"
+            class="w-[116px] h-[190px] object-cover rounded-[15px]"
+          />
+          <img
+            src="/images/campaigns/apple.png"
+            alt="Apple"
+            class="w-[116px] h-[190px] object-cover rounded-[15px]"
+          />
+          <img
+            src="/images/campaigns/mini-led.png"
+            alt="Televisões Mini-LED"
+            class="w-[116px] h-[190px] object-cover rounded-[15px]"
+          />
+          <img
+            src="/images/campaigns/roupa.png"
+            alt="Máquinas Lavar Roupa"
+            class="w-[116px] h-[190px] object-cover rounded-[15px]"
+          />
+        </div>
+      </div>
+    </div>
+  </CaseStudySection>
+</BaseLayout>

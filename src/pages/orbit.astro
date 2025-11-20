@@ -1,0 +1,349 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import CaseStudyHero from "../components/CaseStudyHero.vue";
+import CaseHeader from "../components/CaseHeader.vue";
+import CaseIntro from "../components/CaseIntro.vue";
+import IntroImagesGallery from "../components/IntroImagesGallery.vue";
+import CaseBody from "../components/CaseBody.vue";
+import ContainerFull from "../components/ContainerFull.vue";
+import ContainerHalf from "../components/ContainerHalf.vue";
+import InnerContainerHalf from "../components/InnerContainerHalf.vue";
+import PostItNotes from "../components/PostItNotes.vue";
+import PostItNote from "../components/PostItNote.vue";
+import FeatureList from "../components/FeatureList.vue";
+import FeatureItem from "../components/FeatureItem.vue";
+import ButtonGroup from "../components/ButtonGroup.vue";
+import Button from "../components/Button.vue";
+import ImageGrid from "../components/ImageGrid.vue";
+import ImageWrapper from "../components/ImageWrapper.vue";
+import ImageSquare from "../components/ImageSquare.vue";
+import InlineHighlight from "../components/InlineHighlight.vue";
+import OrbitInput from "../components/OrbitInput.vue";
+---
+
+<BaseLayout title="Orbit - GenAI Music Creation | Portfolio">
+  <CaseStudyHero client:load>
+    <div class="flex flex-col md:flex-row justify-between h-fit mx-auto pt-28">
+      <div class="flex flex-col w-full md:w-[45%]">
+        <div class="flex flex-col">
+          <span class="text-2xl font-medium text-orbit-purple-light m-0"
+            >Case Study</span
+          >
+          <h1 class="text-[44px] font-bold m-0">
+            Leveraging GenAI in Music Creation
+          </h1>
+        </div>
+
+        <div
+          class="flex justify-start gap-12 my-5 font-medium text-base flex-wrap"
+        >
+          <span>UX/UI Design</span>
+          <span>User Research</span>
+          <span>Product Design</span>
+        </div>
+
+        <div class="flex gap-5 my-5">
+          <div>
+            <p class="font-bold">Year</p>
+            <p>2022</p>
+          </div>
+          <div>
+            <p class="font-bold">Client</p>
+            <p>SoundWave Inc.</p>
+          </div>
+        </div>
+      </div>
+
+      <img
+        src="/images/Orbit Thumbnail.png"
+        alt="Orbit Case Study"
+        class="w-full md:w-1/2 flex justify-center items-center"
+      />
+    </div>
+
+    <CaseIntro client:load>
+      <div class="w-full md:w-[40%]">
+        <p class="text-xl font-semibold mb-2.5">Problem</p>
+        <p class="text-justify">
+          Creating music requires several different skills that are hard to
+          develop simultaneously, even if you are a technically great musician
+          you also need the production chops and artistic vision to execute a
+          great idea.
+        </p>
+      </div>
+      <div class="w-full md:w-[40%]">
+        <p class="text-xl font-semibold mb-2.5">Solution</p>
+        <p class="text-justify">
+          An AI tool that allows people to express their musical ideas using a
+          building block keyword system. It helps professionals rapidly create
+          drafts and allows for non-production savvy musicians to implement and
+          tinker with their ideas.
+        </p>
+      </div>
+    </CaseIntro>
+
+    <IntroImagesGallery client:load>
+      <div class="w-full md:w-1/2">
+        <ImageSquare
+          client:load
+          src="/images/Orbit Logo Big.png"
+          alt="Orbit Logo"
+        />
+      </div>
+
+      <div class="flex flex-col md:flex-row flex-wrap gap-8 w-full md:w-1/2">
+        <ImageWrapper
+          client:load
+          src="/images/Orbit Flowchart.png"
+          alt="Orbit Flowchart"
+          rounded="small"
+          shadow
+        />
+        <div class="flex flex-col md:flex-row gap-5 w-full justify-between">
+          <ButtonGroup client:load direction="column">
+            <Button client:load variant="purple">Indie</Button>
+            <Button client:load variant="teal">Indie</Button>
+            <Button client:load variant="orange">Indie</Button>
+            <Button client:load variant="blue">Indie</Button>
+            <Button client:load variant="dark">Indie</Button>
+          </ButtonGroup>
+          <ImageWrapper
+            client:load
+            src="/images/Orbit Help.png"
+            alt="Orbit Help"
+            rounded="small"
+            shadow
+          />
+        </div>
+      </div>
+    </IntroImagesGallery>
+  </CaseStudyHero>
+
+  <CaseBody client:load>
+    <ContainerFull client:load>
+      <h2 class="text-4xl font-bold mb-4">Current Pain Points</h2>
+      <p class="text-base leading-[1.3]">
+        Interviews with people lead to discovering core pain points of the music
+        production process. Less experienced interviewees expressed issues with
+        the amount of information they'd need to take in when using professional
+        tools and a lack of assistance. More experienced users who were already
+        familiar with tools mostly talked about the difficulties they felt when
+        coming up with new ideas or the initial stages of a project.
+      </p>
+      <PostItNotes client:load>
+        <PostItNote client:load color="yellow">
+          <h3 class="text-2xl font-semibold my-2">Cognitive Overload</h3>
+          <p>
+            Digital Audio Workstations are too complex and offer too many
+            options to pick from
+          </p>
+        </PostItNote>
+        <PostItNote client:load color="yellow">
+          <h3 class="text-2xl font-semibold my-2">A Scary Blank Canvas</h3>
+          <p>Coming up and setting up with new projects can be difficult.</p>
+        </PostItNote>
+        <PostItNote client:load color="yellow">
+          <h3 class="text-2xl font-semibold my-2">Lack of Onboarding</h3>
+          <p>
+            Figuring out where to start is often the hardest part of learning
+          </p>
+        </PostItNote>
+      </PostItNotes>
+    </ContainerFull>
+
+    <ContainerHalf client:load>
+      <div>
+        <h2 class="text-4xl font-bold mb-4">User Persona</h2>
+        <p>
+          This is Sara, she loves listening to music and was always curious
+          about creating her own songs. Sadly she does not have the time to
+          learn about production and even when she tried to learn all of the
+          information seemed overwhelming.
+        </p>
+      </div>
+      <ImageWrapper
+        client:load
+        src="/images/Orbit Persona.png"
+        alt="User Persona"
+        rounded="small"
+        shadow
+      />
+    </ContainerHalf>
+
+    <ContainerHalf client:load>
+      <div>
+        <h2 class="text-4xl font-bold mb-4">Features</h2>
+        <p>
+          From the interviews it was also possible to identify what the users
+          would like to accomplish with this tool and come up with core features
+        </p>
+      </div>
+      <FeatureList client:load>
+        <FeatureItem client:load label="Create songs">
+          Users want be able to create a song from zero, with no need for
+          musical production knowledge
+        </FeatureItem>
+        <FeatureItem client:load label="Explore new ideas">
+          User want to quickly create a draft that can then be exported to
+          edited
+        </FeatureItem>
+        <FeatureItem client:load label="Sharing">
+          Users want to be able to share their creations with their friends
+        </FeatureItem>
+      </FeatureList>
+    </ContainerHalf>
+
+    <ContainerFull client:load>
+      <h2 class="text-4xl font-bold mb-4">Defining the Input</h2>
+      <p class="text-base leading-[1.3]">
+        The way non technical people describe and understand music is very
+        different from how musicians or producers do it. Without expert music
+        theory and production knowledge, we are limited to describe music with
+        terms like bright, chill, heavy, etc. Interestingly that is also how
+        musicians often describe the sound they are looking for, using
+        non-technical terms like chunky.
+      </p>
+      <br />
+      <br />
+      <p class="text-base leading-[1.3]">
+        To adapt to this way of describing music, I opted to follow a <strong
+          >keyword based approach to starting and editing tracks.</strong
+        >
+      </p>
+      <InnerContainerHalf client:load>
+        <ImageWrapper
+          client:load
+          src="/images/Orbit Blast.png"
+          alt="Orbit Blast Example"
+          rounded="small"
+          shadow
+        />
+        <ImageWrapper
+          client:load
+          src="/images/Orbit Indie.png"
+          alt="Orbit Indie Example"
+          rounded="small"
+          shadow
+        />
+      </InnerContainerHalf>
+    </ContainerFull>
+
+    <ContainerFull client:load>
+      <h2 class="text-4xl font-bold mb-4">Early Prototype and Testing</h2>
+      <p class="text-base leading-[1.3]">
+        As a way to validate the concept and get some early user feedback a
+        low-mid fidelity prototype was created. For testing users where given
+        the task of creating a simple song and exporting it
+      </p>
+      <InnerContainerHalf client:load>
+        <ImageGrid client:load variant="grid2x2" gap="xs">
+          <ImageWrapper
+            client:load
+            src="/images/Orbit LoFi 1.png"
+            alt="Lo-Fi Prototype 1"
+            rounded="mini"
+            shadow
+          />
+          <ImageWrapper
+            client:load
+            src="/images/Orbit LoFi 2.png"
+            alt="Lo-Fi Prototype 2"
+            rounded="mini"
+            shadow
+          />
+          <ImageWrapper
+            client:load
+            src="/images/Orbit LoFi 3.png"
+            alt="Lo-Fi Prototype 3"
+            rounded="mini"
+            shadow
+          />
+          <ImageWrapper
+            client:load
+            src="/images/Orbit LoFi 4.png"
+            alt="Lo-Fi Prototype 4"
+            rounded="mini"
+            shadow
+          />
+        </ImageGrid>
+        <div class="flex flex-col justify-between">
+          <ImageWrapper
+            client:load
+            src="/images/Orbit Flowchart.png"
+            alt="User Flow"
+            rounded="small"
+            shadow
+          />
+          <p>
+            <InlineHighlight client:load color="purple"
+              >Insights:</InlineHighlight
+            >
+            User testing revealed the need to add signifiers some portions of the
+            app. For instance it is not immediately obvious that it is possible to
+            remove keywords or mute single tracks.
+          </p>
+        </div>
+      </InnerContainerHalf>
+    </ContainerFull>
+
+    <ContainerFull client:load>
+      <h2 class="text-4xl font-bold mb-4">Design System</h2>
+      <h3 class="text-2xl pt-4 font-semibold my-2">Color Palette</h3>
+      <img src="/images/Colors.png" alt="Color Palette" class="w-full" />
+      <h3 class="text-2xl pt-4 font-semibold my-2">Typography</h3>
+      <img src="/images/Typography.png" alt="Typography" class="w-full" />
+      <h3 class="text-2xl pt-4 font-semibold my-2">Components</h3>
+      <ButtonGroup client:load>
+        <Button client:load variant="purple">Indie</Button>
+        <Button client:load variant="teal">Indie</Button>
+        <Button client:load variant="orange">Indie</Button>
+        <Button client:load variant="blue">Indie</Button>
+        <Button client:load variant="dark">Indie</Button>
+      </ButtonGroup>
+
+      <ButtonGroup client:load>
+        <Button client:load variant="purple" closable>Indie</Button>
+        <Button client:load variant="teal" closable>Indie</Button>
+        <Button client:load variant="orange" closable>Indie</Button>
+        <Button client:load variant="dark" closable>Indie</Button>
+        <Button client:load variant="blue" closable>Indie</Button>
+      </ButtonGroup>
+
+      <OrbitInput client:load placeholder="Type here..." />
+    </ContainerFull>
+
+    <ContainerFull client:load>
+      <h2 class="text-4xl font-bold mb-4">Screens</h2>
+      <ImageGrid client:load variant="grid2x2" gap="xs">
+        <ImageWrapper
+          client:load
+          src="/images/Orbit HiFi 1.png"
+          alt="High Fidelity Screen 1"
+          rounded="mini"
+          shadow
+        />
+        <ImageWrapper
+          client:load
+          src="/images/Orbit Hifi 2.png"
+          alt="High Fidelity Screen 2"
+          rounded="mini"
+          shadow
+        />
+        <ImageWrapper
+          client:load
+          src="/images/Orbit Hifi 3.png"
+          alt="High Fidelity Screen 3"
+          rounded="mini"
+          shadow
+        />
+        <ImageWrapper
+          client:load
+          src="/images/Orbit Hifi 4.png"
+          alt="High Fidelity Screen 4"
+          rounded="mini"
+          shadow
+        />
+      </ImageGrid>
+    </ContainerFull>
+  </CaseBody>
+</BaseLayout>

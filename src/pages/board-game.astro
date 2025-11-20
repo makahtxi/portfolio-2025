@@ -1,0 +1,477 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import CaseStudyHero from "../components/CaseStudyHero.vue";
+import CaseStudySection from "../components/CaseStudySection.vue";
+import ImageGrid from "../components/ImageGrid.vue";
+import PostItNote from "../components/PostItNote.vue";
+import IterationBlock from "../components/IterationBlock.vue";
+import ScoreDisplay from "../components/ScoreDisplay.vue";
+---
+
+<BaseLayout title="Educational Board Game | Portfolio">
+  <CaseStudyHero client:load>
+    <div class="flex flex-col md:flex-row gap-8 items-start">
+      <div class="flex-1 space-y-6">
+        <div>
+          <span class="text-orbit-purple-light font-medium">Case Study</span>
+          <h1 class="text-4xl md:text-5xl font-bold mt-2">
+            Unlocking a sociable learning experience
+          </h1>
+        </div>
+
+        <div class="flex gap-3 flex-wrap">
+          <span class="px-4 py-2 bg-white/10 rounded-full text-sm"
+            >UX/UI Design</span
+          >
+          <span class="px-4 py-2 bg-white/10 rounded-full text-sm"
+            >User Research</span
+          >
+          <span class="px-4 py-2 bg-white/10 rounded-full text-sm"
+            >Product Design</span
+          >
+        </div>
+
+        <div class="flex gap-8">
+          <div>
+            <p class="font-semibold">Year</p>
+            <p class="opacity-80">2025</p>
+          </div>
+          <div>
+            <p class="font-semibold">Project</p>
+            <p class="opacity-80">Educational Board Game</p>
+          </div>
+        </div>
+      </div>
+
+      <img
+        src="/images/Intro Head.png"
+        alt="Board Game Case Study"
+        class="w-full md:w-1/2 rounded-[var(--radius-card)]"
+      />
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-8 mt-12">
+      <div>
+        <p class="font-semibold mb-2">Problem</p>
+        <p class="opacity-90">
+          Current education often fails to engage students, lacking active,
+          social, and exploratory elements. This contributes to issues with
+          focus, social skills, and critical thinking. Existing educational
+          games frequently miss the mark by superficially adding game elements
+          without grounding in learning theory or user interaction, hindering
+          their effectiveness. Excessive digital tech use also presents
+          challenges.
+        </p>
+      </div>
+      <div>
+        <p class="font-semibold mb-2">Solution</p>
+        <p class="opacity-90">
+          The solution proposed is the design of a new educational tool: a
+          tabletop game for 8th-grade Natural Sciences students. Using a
+          user-centered design approach, the project aimed to create a tool that
+          is genuinely engaging, promotes interaction, and effectively teaches
+          curriculum content, specifically on sustainability and natural
+          resources.
+        </p>
+      </div>
+    </div>
+
+    <div class="mt-12 grid grid-cols-2 md:grid-cols-4
+          + gap-5">
+      <img
+        src="/images/Intro Flow.png"
+        alt="Game Flow"
+        class="col-span-2 rounded-[var(--radius-card)] shadow-lg w-full h-full object-cover"
+      />
+      <img
+        src="/images/Intro Symbols.png"
+        alt="Game 
+          Symbols"
+        class="col-span-1 rounded-[var(--radius-card)] shadow-lg w-full h-full object-cover"
+      />
+      <img
+        src="/images/Intro Card.png"
+        alt="Game Card"
+        class="col-span-1 rounded-[var(--radius-card)] shadow-lg w-full h-full object-cover"
+      />
+    </div>
+  </CaseStudyHero>
+
+  <CaseStudySection client:load>
+    <h2 class="text-3xl font-bold mb-4">The Why</h2>
+    <p class="mb-4 leading-relaxed">
+      Who has never felt trapped in a classroom? Dreaded a test? Or maybe just
+      not engaged with whatever was going on?
+    </p>
+    <p class="mb-4 leading-relaxed">
+      Maybe you're just a maverick student, but most students have suffered from
+      these issues, and the truth is that it's not only understandable, it's
+      expected.
+    </p>
+    <p class="mb-4 leading-relaxed">
+      Teaching methods haven't been made interesting, they don't provide
+      feedback nor fast nor frequently enough. This leads to disengagement and
+      slower learning. Students are also socialising less with another, there's
+      a loneliness epidemic.
+    </p>
+    <p class="leading-relaxed">
+      Games are extremely good at providing near instant and frequent feedback,
+      they're also one of the main ways we as humans interact with one another.
+      So why don't we try bringing them in?
+    </p>
+  </CaseStudySection>
+
+  <CaseStudySection client:load>
+    <h2 class="text-3xl font-bold mb-4">The Who</h2>
+    <p class="mb-4 leading-relaxed">
+      There are two audiences suffering from these issues:
+    </p>
+    <p class="mb-4 leading-relaxed">Students and Teachers.</p>
+    <p class="mb-4 leading-relaxed">
+      Students who feel disengaged from classes are more to perform poorly.
+      Teachers who feel like they can't reach their students are also more at
+      risk of underperforming. It's an endless loop.
+    </p>
+    <p class="mb-8 leading-relaxed">
+      So I opted to interview the people who spend the most time with them,
+      often more than their parents: their teachers. So, what did they have to
+      say?
+    </p>
+
+    <ImageGrid client:load columns={4} gap="md">
+      <PostItNote client:load color="yellow" noHeader="true">
+        <p>Students are having trouble focusing and dealing with frustration</p>
+      </PostItNote>
+      <PostItNote client:load color="yellow" noHeader="true">
+        <p>
+          Students aren't interacting with each other as much as they used to
+        </p>
+      </PostItNote>
+      <PostItNote client:load color="yellow" noHeader="true">
+        <p>
+          Teachers lack support from schools to implement new teaching methods
+        </p>
+      </PostItNote>
+      <PostItNote client:load color="yellow" noHeader="true">
+        <p>
+          Students are too dependant on technology and its affecting their
+          critical thinking skills
+        </p>
+      </PostItNote>
+    </ImageGrid>
+
+    <p class="mb-8 leading-relaxed">
+      To better understand students needs and wants I conducted a participatory
+      session with students where they had to build their own games or stories.
+    </p>
+    <p class="mb-8 leading-relaxed">
+      The projects students developed, the conversations that were had and even
+      the observation of the classroom environment provided significant insights
+      for further project development.
+    </p>
+
+    <ImageGrid client:load columns={2} gap="md">
+      <img
+        src="/images/Case 1.png"
+        alt="Research Session 1"
+        class="rounded-[var(--radius-card)] shadow-lg"
+      />
+      <img
+        src="/images/Case 2.png"
+        alt="Research Session 2"
+        class="rounded-[var(--radius-card)] shadow-lg"
+      />
+      <img
+        src="/images/Case 3.png"
+        alt="Research Session 3"
+        class="rounded-[var(--radius-card)] shadow-lg"
+      />
+      <img
+        src="/images/Case 4.png"
+        alt="Research Session 4"
+        class="rounded-[var(--radius-card)] shadow-lg"
+      />
+    </ImageGrid>
+  </CaseStudySection>
+
+  <CaseStudySection client:load>
+    <h2 class="text-3xl font-bold mb-4">The What</h2>
+    <p class="mb-4 leading-relaxed">
+      The project resulted in a collaborative engine-building card game about
+      sustainability for 8th graders.
+    </p>
+    <p class="mb-4 leading-relaxed">
+      Players manage resources, build infrastructure for energy/food, and handle
+      pollution. The design process was iterative, starting with a core concept
+      and refining it through multiple rounds of testing and feedback to improve
+      mechanics, balance, and user experience.
+    </p>
+    <p class="mb-8 leading-relaxed">
+      Collaboration was a key part of the game, as teachers showed great worries
+      about students' interpersonal skills, and a collaborative game would
+      provide a platform for them learn to effectively communicate their ideas.
+    </p>
+
+    <img
+      src="/images/Game Elements.png"
+      alt="Game Elements Overview"
+      class="w-full rounded-[var(--radius-card)]"
+    />
+  </CaseStudySection>
+  <CaseStudySection>
+    <h2 class="text-3xl font-bold mb-4">Iteration, Iteration</h2>
+    <p class="mb-4 leading-relaxed">
+      The game evolved through several testing and iteration loops. Early tests
+      revealed issues like potential unplayable states and unbalanced elements,
+      leading to rule adjustments, improved resource utility, and the
+      introduction of round-based objectives and turn limits. Feedback from
+      child psychologists influenced changes to improve cooperation, while
+      testing with target users informed adjustments to pacing and balance.
+    </p>
+
+    <h3 class="text-2xl font-semibold mb-4">2nd Iteration Changes</h3>
+    <ImageGrid client:load columns={2} gap="md">
+      <IterationBlock
+        client:load
+        problemDescription="Unplayable game states due to lack of available structures or necessary Extraction cards."
+        changesDescription="Introduced a 'reroll' mechanic for available structure cards and had players start with all Extraction cards in hand."
+      />
+      <IterationBlock
+        client:load
+        problemDescription="Unbalanced Structures and limited utility of Water."
+        changesDescription="Adjusted costs and energy generation for some structures and made generating food cost Water to increase its usefulness"
+      />
+      <IterationBlock
+        client:load
+        problemDescription="Players skipping turns to avoid pollution due to unlimited turns to complete the goals"
+        changesDescription="Implemented round objectives requiring players to generate a certain amount of food and energy per round within a turn limit"
+      />
+      <IterationBlock
+        client:load
+        problemDescription="Players spamming structure activation instead of building."
+        changesDescription="Limited structure activation to once per round to encourage building."
+      />
+    </ImageGrid>
+    <div class="my-8"></div>
+    <h3 class="text-2xl font-semibold mb-4">3rd Iteration Changes</h3>
+    <ImageGrid client:load columns={2} gap="md">
+      <IterationBlock
+        client:load
+        problemDescription="Using up a whole turn made sending resrources too punishing. Resulting in less collaboration."
+        changesDescription="Changed sending resources to happen at the end of a turn, adding a small pollution cost per resources sent."
+      />
+      <IterationBlock
+        client:load
+        problemDescription="Few ways for strategic collaboration."
+        changesDescription="Added the option for players to swap extraction cards at the start of their turn."
+      />
+      <IterationBlock
+        client:load
+        problemDescription="Games were taking too long to finish."
+        changesDescription="Reduced the number of rounds from five to three."
+      />
+      <IterationBlock
+        client:load
+        problemDescription="Unbalanced difficulty curve (first round too hard, later too easy)."
+        changesDescription="Increased the number of turns in the first round while decreasing turns in subsequent rounds."
+      />
+    </ImageGrid>
+  </CaseStudySection>
+
+  <CaseStudySection client:load>
+    <h2 class="text-3xl font-bold mb-4">User Testing</h2>
+    <p class="mb-8 leading-relaxed">
+      Final testing with 8th-grade students showed promising results. Surveys
+      indicated good usability and positive impact on learning about
+      sustainability. Crucially, the game was highly successful in promoting
+      communication and collaboration among players, who actively strategized
+      together. Key areas for improvement identified were game pacing, the
+      balance/utility of certain game elements, and the desire for more
+      individual agency.
+    </p>
+
+    <!-- Self-Reported Participant Data -->
+    <div class="bg-[#212121] rounded-[15px] px-8 py-8 mb-6">
+      <h3 class="text-white text-4xl font-extrabold mb-8">
+        Self-Reported Participant Data
+      </h3>
+      <div
+        class="flex items-center justify-center lg:justify-between lg:pr-12 flex-wrap"
+      >
+        <ScoreDisplay label="Player Enjoyment" score="4" suffix="/5" />
+        <ScoreDisplay
+          label="Increased Interest in Sustainability"
+          score="4"
+          suffix=",3/5"
+        />
+        <ScoreDisplay
+          label="Increased Understanding of Sustainable Development"
+          score="3"
+          suffix=",6/5"
+        />
+        <ScoreDisplay label="Player Communication" score="5" suffix="/5" />
+      </div>
+    </div>
+
+    <!-- SUS Score and Notes -->
+    <div class="flex gap-5 flex-wrap">
+      <div
+        class="bg-[#212121] rounded-[15px] flex flex-col justify-between px-5 py-5 text-white"
+      >
+        <p class="font-extrabold">
+          <span class="text-2xl">SUS Score </span>
+          <span class="text-xs font-regular">(System Usability Survey)</span>
+        </p>
+        <p class="font-extrabold">
+          <span class="text-6xl">72</span>
+          <span class="text-3xl">,5/100</span>
+        </p>
+      </div>
+      <div
+        class="bg-[#212121] rounded-[15px] px-9 py-5 text-white flex-1 min-w-[280px]"
+      >
+        <p class="text-2xl font-extrabold mb-2">Notes:</p>
+        <div class="flex flex-col gap-2 text-base font-regular text-justify">
+          <p>
+            Player interest and knowledge about the field increased as expected
+            according to former studies
+          </p>
+          <p>
+            The collaborative nature of the game was very successful in
+            encouraging player communication.
+          </p>
+        </div>
+      </div>
+    </div>
+  </CaseStudySection>
+
+  <CaseStudySection client:load>
+    <h2 class="text-3xl font-bold mb-8">Game Components</h2>
+
+    <div class="flex flex-wrap gap-5">
+      <!-- Playable Cards (Extraction + Resource) -->
+      <div class="flex flex-col gap-5 items-center lg:flex-row">
+        <!-- Extraction Structure Cards -->
+        <div
+          class="flex flex-wrap w-full items-center justify-center gap-2 lg:w-6/12"
+        >
+          <img
+            src="/images/cards/reservatorio.png"
+            alt="Reservatório"
+            class="w-32/100 object-cover rounded-lg"
+          />
+          <img
+            src="/images/cards/captacao-subterranea.png"
+            alt="Captação Subterrânea"
+            class="w-32/100 object-cover rounded-lg"
+          />
+          <img
+            src="/images/cards/mina-subterranea.png"
+            alt="Mina Subterrânea"
+            class="w-32/100 object-cover rounded-lg"
+          />
+          <img
+            src="/images/cards/mina-ceu-aberto.png"
+            alt="Mina a Céu Aberto"
+            class="w-32/100 object-cover rounded-lg"
+          />
+          <img
+            src="/images/cards/fracking.png"
+            alt="Fracking"
+            class="w-32/100 object-cover rounded-lg"
+          />
+          <img
+            src="/images/cards/petroleiro.png"
+            alt="Petroleiro"
+            class="w-32/100 object-cover rounded-lg"
+          />
+        </div>
+
+        <!-- Resource Cards -->
+        <div
+          class="flex flex-wrap w-full items-center justify-center gap-2 lg:w-6/12"
+        >
+          <img
+            src="/images/cards/rio.png"
+            alt="Rio"
+            class="w-32/100 object-cover rounded-lg"
+          />
+          <img
+            src="/images/cards/deposito-ouro.png"
+            alt="Depósito de Ouro"
+            class="w-32/100 object-cover rounded-lg"
+          />
+          <img
+            src="/images/cards/deposito-aluminio.png"
+            alt="Depósito de Alumínio"
+            class="w-32/100 object-cover rounded-lg"
+          />
+          <img
+            src="/images/cards/deposito-cobre.png"
+            alt="Depósito de Cobre"
+            class="w-32/100 object-cover rounded-lg"
+          />
+          <img
+            src="/images/cards/deposito-petroleo.png"
+            alt="Depósito de Petróleo"
+            class="w-32/100 object-cover rounded-lg"
+          />
+          <img
+            src="/images/cards/deposito-carvao.png"
+            alt="Depósito de Carvão"
+            class="w-32/100 object-cover rounded-lg"
+          />
+        </div>
+      </div>
+
+      <!-- Production Structure Cards -->
+      <div class="flex flex-wrap gap-1 justify-center w-[1024px]">
+        <img
+          src="/images/cards/barragem.png"
+          alt="Barragem"
+          class="w-32/100 lg:w-16/100 object-cover rounded-lg"
+        />
+        <img
+          src="/images/cards/carvao.png"
+          alt="Carvão"
+          class="w-32/100 lg:w-16/100 object-cover rounded-lg"
+        />
+        <img
+          src="/images/cards/quinta.png"
+          alt="Quinta"
+          class="w-32/100 lg:w-16/100 object-cover rounded-lg"
+        />
+        <img
+          src="/images/cards/quinta-industrial.png"
+          alt="Quinta Industrial"
+          class="w-32/100 lg:w-16/100 object-cover rounded-lg"
+        />
+        <img
+          src="/images/cards/reciclagem.png"
+          alt="Central Reciclagem"
+          class="w-32/100 lg:w-16/100 object-cover rounded-lg"
+        />
+        <img
+          src="/images/cards/nuclear.png"
+          alt="Central Nuclear"
+          class="w-32/100 lg:w-16/100 object-cover rounded-lg"
+        />
+        <img
+          src="/images/cards/gerador-petroleo.png"
+          alt="Gerador (Petróleo)"
+          class="w-32/100 lg:w-16/100 object-cover rounded-lg"
+        />
+        <img
+          src="/images/cards/painel-solar.png"
+          alt="Painel Solar"
+          class="w-32/100 lg:w-16/100 object-cover rounded-lg"
+        />
+        <img
+          src="/images/cards/moinhos-eolicos.png"
+          alt="Moinhos Eólicos"
+          class="w-32/100 lg:w-16/100 object-cover rounded-lg"
+        />
+      </div>
+    </div>
+  </CaseStudySection>
+</BaseLayout>

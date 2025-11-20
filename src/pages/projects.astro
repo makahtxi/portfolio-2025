@@ -1,0 +1,60 @@
+---
+import ProjectItem from "../components/ProjectItem.vue";
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Nav from "../components/Nav.vue";
+---
+
+<BaseLayout title="Projects">
+  <div class="w-full h-screen flex flex-col items-center">
+    <div class="w-10/12 g flex justify-center border-b-2 border-black mt-24">
+      <h1 class="w-11/12 text-4xl font-semibold py-6 justify-start">
+        Projects
+      </h1>
+    </div>
+
+    <div class="w-10/12 m-0 flex justify-center mt-4">
+      <div class="w-fit m-auto flex flex-row flex-wrap gap-4">
+        <ProjectItem
+          client:load
+          name="UPLING"
+          href="/upling"
+          tags="Guiding students to higher ed"
+          img="/images/Thumbnails/Upling.png"
+          color="#FFFFFF"
+        />
+        <ProjectItem
+          client:load
+          name="ORBIT OVERTURE"
+          href="/orbit"
+          tags="AI Music Maker Tool"
+          img="/images/Thumbnails/Orbit.png"
+          color="#FFFFFF"
+        />
+        <ProjectItem
+          client:load
+          name="BOATY"
+          href="/projects/boaty"
+          tags="Branding for artist"
+          img="/images/Thumbnails/Boaty.png"
+          color="#FF00F2"
+        />
+        <ProjectItem
+          client:load
+          name="PASSPORT"
+          href="/projects/passport-of-the-future"
+          tags="Passport app (in the future)"
+          img="/images/Thumbnails/Passport.png"
+          color="#000000"
+        />
+        <ProjectItem
+          client:load
+          name="LAGOS"
+          href="/projects/lagos"
+          tags="Wayfinding and urban design"
+          img="/images/Thumbnails/Lagos.png"
+          color="#232745"
+        />
+      </div>
+    </div>
+  </div>
+</BaseLayout>

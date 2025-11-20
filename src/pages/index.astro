@@ -1,0 +1,33 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import HomeItem from '../components/HomeItem.vue';
+---
+
+<BaseLayout title="Pedro Botica">
+  <div class="flex flex-col xl:flex-row gap-8 xl:gap-0 items-center xl:justify-center m-auto w-10/12 h-screen">
+    <div class="h-full flex flex-col justify-end xl:justify-center items-center w-full xl:w-6/12">
+      <div>
+        <h1 class="text-6xl text-center xl:text-left font-semibold mb-2">Hi, I'm Pedro</h1>
+        <h3 class="text-2xl text-center xl:text-left font-regular mb-6">UX/UI Designer & Developer</h3>
+        <p class="text-xl text-center xl:text-left font-regular"></p>
+      </div>
+    </div>
+    <div class="h-full flex flex-col items-center xl:justify-center w-full xl:w-6/12 gap-0">
+      <HomeItem
+        client:load
+        href="/projects"
+        name="PROJECTS"
+      />
+      <HomeItem
+        client:load
+        href="/about"
+        name="ABOUT"
+      />
+      <HomeItem
+        client:load
+        href="/contact"
+        name="CONTACT"
+      />
+    </div>
+  </div>
+</BaseLayout>
