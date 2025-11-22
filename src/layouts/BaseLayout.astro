@@ -1,6 +1,7 @@
 ---
 import "../styles/global.css";
 import Nav from "../components/Nav.vue";
+import Footer from "../components/Footer.vue";
 import Analytics from "@vercel/analytics/astro";
 
 interface Props {
@@ -34,6 +35,7 @@ const currentPath = Astro.url.pathname;
   <body>
     <Nav client:load currentPath={currentPath} />
     <slot class="w-80 m-auto" />
+    <Footer />
     <Analytics />
   </body>
 </html>

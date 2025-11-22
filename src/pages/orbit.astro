@@ -2,7 +2,6 @@
 import BaseLayout from "../layouts/BaseLayout.astro";
 import CaseStudyHero from "../components/CaseStudyHero.vue";
 import CaseHeader from "../components/CaseHeader.vue";
-import CaseIntro from "../components/CaseIntro.vue";
 import IntroImagesGallery from "../components/IntroImagesGallery.vue";
 import CaseBody from "../components/CaseBody.vue";
 import ContainerFull from "../components/ContainerFull.vue";
@@ -19,6 +18,7 @@ import ImageWrapper from "../components/ImageWrapper.vue";
 import ImageSquare from "../components/ImageSquare.vue";
 import InlineHighlight from "../components/InlineHighlight.vue";
 import OrbitInput from "../components/OrbitInput.vue";
+import ProblemSolution from "../components/ProblemSolution.vue";
 ---
 
 <BaseLayout title="Orbit - GenAI Music Creation | Portfolio">
@@ -56,31 +56,25 @@ import OrbitInput from "../components/OrbitInput.vue";
 
       <img
         src="/images/Orbit Thumbnail.png"
-        alt="Orbit Case Study"
-        class="w-full md:w-1/2 flex justify-center items-center"
+        alt=""
+        class="w-full md:w-1/2 flex justify-center items-center rounded-2xl"
       />
     </div>
 
-    <CaseIntro client:load>
-      <div class="w-full md:w-[40%]">
-        <p class="text-xl font-semibold mb-2.5">Problem</p>
-        <p class="text-justify">
-          Creating music requires several different skills that are hard to
-          develop simultaneously, even if you are a technically great musician
-          you also need the production chops and artistic vision to execute a
-          great idea.
-        </p>
-      </div>
-      <div class="w-full md:w-[40%]">
-        <p class="text-xl font-semibold mb-2.5">Solution</p>
-        <p class="text-justify">
-          An AI tool that allows people to express their musical ideas using a
-          building block keyword system. It helps professionals rapidly create
-          drafts and allows for non-production savvy musicians to implement and
-          tinker with their ideas.
-        </p>
-      </div>
-    </CaseIntro>
+    <ProblemSolution client:load>
+      <Fragment slot="problem">
+        Creating music requires several different skills that are hard to
+        develop simultaneously, even if you are a technically great musician you
+        also need the production chops and artistic vision to execute a great
+        idea.
+      </Fragment>
+      <Fragment slot="solution">
+        An AI tool that allows people to express their musical ideas using a
+        building block keyword system. It helps professionals rapidly create
+        drafts and allows for non-production savvy musicians to implement and
+        tinker with their ideas.
+      </Fragment>
+    </ProblemSolution>
 
     <IntroImagesGallery client:load>
       <div class="w-full md:w-1/2">

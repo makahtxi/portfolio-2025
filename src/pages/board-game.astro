@@ -6,75 +6,67 @@ import ImageGrid from "../components/ImageGrid.vue";
 import PostItNote from "../components/PostItNote.vue";
 import IterationBlock from "../components/IterationBlock.vue";
 import ScoreDisplay from "../components/ScoreDisplay.vue";
+import ProblemSolution from "../components/ProblemSolution.vue";
 ---
 
 <BaseLayout title="Educational Board Game | Portfolio">
   <CaseStudyHero client:load>
-    <div class="flex flex-col md:flex-row gap-8 items-start">
-      <div class="flex-1 space-y-6">
-        <div>
-          <span class="text-orbit-purple-light font-medium">Case Study</span>
-          <h1 class="text-4xl md:text-5xl font-bold mt-2">
-            Unlocking a sociable learning experience
+    <div class="flex flex-col md:flex-row justify-between h-fit mx-auto pt-28">
+      <div class="flex flex-col w-full md:w-[45%]">
+        <div class="flex flex-col">
+          <span class="text-2xl font-medium text-orbit-purple-light m-0"
+            >Case Study</span
+          >
+          <h1 class="text-[44px] font-bold m-0">
+            Unlocking a sociable<br />learning experience
           </h1>
         </div>
 
-        <div class="flex gap-3 flex-wrap">
-          <span class="px-4 py-2 bg-white/10 rounded-full text-sm"
-            >UX/UI Design</span
-          >
-          <span class="px-4 py-2 bg-white/10 rounded-full text-sm"
-            >User Research</span
-          >
-          <span class="px-4 py-2 bg-white/10 rounded-full text-sm"
-            >Product Design</span
-          >
+        <div
+          class="flex justify-start gap-12 my-5 font-medium text-base flex-wrap"
+        >
+          <span>UX/UI Design</span>
+          <span>User Research</span>
+          <span>Product Design</span>
         </div>
 
-        <div class="flex gap-8">
+        <div class="flex gap-5 my-5">
           <div>
-            <p class="font-semibold">Year</p>
-            <p class="opacity-80">2025</p>
+            <p class="font-bold">Year</p>
+            <p>2025</p>
           </div>
           <div>
-            <p class="font-semibold">Project</p>
-            <p class="opacity-80">Educational Board Game</p>
+            <p class="font-bold">Project</p>
+            <p>Educational Board Game</p>
           </div>
         </div>
       </div>
 
       <img
         src="/images/Intro Head.png"
-        alt="Board Game Case Study"
-        class="w-full md:w-1/2 rounded-[var(--radius-card)]"
+        alt=""
+        class="w-full md:w-1/2 flex justify-center items-center rounded-2xl"
       />
     </div>
 
-    <div class="grid md:grid-cols-2 gap-8 mt-12">
-      <div>
-        <p class="font-semibold mb-2">Problem</p>
-        <p class="opacity-90">
-          Current education often fails to engage students, lacking active,
-          social, and exploratory elements. This contributes to issues with
-          focus, social skills, and critical thinking. Existing educational
-          games frequently miss the mark by superficially adding game elements
-          without grounding in learning theory or user interaction, hindering
-          their effectiveness. Excessive digital tech use also presents
-          challenges.
-        </p>
-      </div>
-      <div>
-        <p class="font-semibold mb-2">Solution</p>
-        <p class="opacity-90">
-          The solution proposed is the design of a new educational tool: a
-          tabletop game for 8th-grade Natural Sciences students. Using a
-          user-centered design approach, the project aimed to create a tool that
-          is genuinely engaging, promotes interaction, and effectively teaches
-          curriculum content, specifically on sustainability and natural
-          resources.
-        </p>
-      </div>
-    </div>
+    <ProblemSolution client:load>
+      <Fragment slot="problem">
+        Current education often fails to engage students, lacking active,
+        social, and exploratory elements. This contributes to issues with focus,
+        social skills, and critical thinking. Existing educational games
+        frequently miss the mark by superficially adding game elements without
+        grounding in learning theory or user interaction, hindering their
+        effectiveness. Excessive digital tech use also presents challenges.
+      </Fragment>
+      <Fragment slot="solution">
+        The solution proposed is the design of a new educational tool: a
+        tabletop game for 8th-grade Natural Sciences students. Using a
+        user-centered design approach, the project aimed to create a tool that
+        is genuinely engaging, promotes interaction, and effectively teaches
+        curriculum content, specifically on sustainability and natural
+        resources.
+      </Fragment>
+    </ProblemSolution>
 
     <div class="mt-12 grid grid-cols-2 md:grid-cols-4
           + gap-5">

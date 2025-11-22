@@ -2,7 +2,7 @@
   <article class="flex w-[40%] flex-col">
     <a :href="href">
       <div class="flex items-end gap-4 mb-2">
-        <h2 class="text-2xl font-semibold ">{{ name }}</h2>
+        <h2 class="text-lg font-semibold ">{{ name }}</h2>
         <span class="text-sm font-light ">{{ tags }}</span>
       </div>
       <img :src="img" :alt="name" />

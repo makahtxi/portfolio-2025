@@ -1,0 +1,85 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import CaseStudyHero from "../components/CaseStudyHero.vue";
+import CaseStudySection from "../components/CaseStudySection.vue";
+---
+
+<BaseLayout title="Boaty - Branding | Portfolio">
+  <CaseStudyHero client:load>
+    <div class="flex flex-col md:flex-row justify-between h-fit mx-auto pt-28">
+      <div class="flex flex-col w-full md:w-[45%]">
+        <div class="flex flex-col">
+          <span class="text-2xl font-medium text-orbit-purple-light m-0"
+            >Branding</span
+          >
+          <h1 class="text-[44px] font-bold m-0">
+            Branding for<br />Boaty
+          </h1>
+        </div>
+
+        <div
+          class="flex justify-start gap-12 my-5 font-medium text-base flex-wrap"
+        >
+          <span>Branding</span>
+          <span>Graphic Design</span>
+        </div>
+
+        <div class="flex gap-5 my-5">
+          <div>
+            <p class="font-bold">Year</p>
+            <p>2024</p>
+          </div>
+          <div>
+            <p class="font-bold">Project</p>
+            <p>Boaty</p>
+          </div>
+        </div>
+      </div>
+
+      <img
+        src="/images/boaty/drawings.png"
+        alt="Boaty Branding"
+        class="w-full md:w-1/2 flex justify-center items-center rounded-2xl"
+      />
+    </div>
+
+    <div class="mt-12">
+      <p class="opacity-90 text-lg leading-relaxed pb-30">
+        Boaty is an independent beatmaker from Portugal. As an artist he draws
+        inspiration from internet culture, anime, and portuguese pop culture and
+        mixes those elements with his own vision and style producing a modern
+        and creative style of trap.
+      </p>
+    </div>
+  </CaseStudyHero>
+
+  <CaseStudySection client:load>
+    <div class="mb-12">
+      <p class="text-lg leading-relaxed mb-8">
+        While developing Boaty's logo I wanted to create something that would
+        convey the elements that define him as an artist. His creativity, his
+        style, his background, where he came from and to where he is going.
+      </p>
+    </div>
+
+    <div class="flex flex-col gap-8">
+      <img
+        src="/images/boaty/cover.png"
+        alt="Boaty Logo Drawings"
+        class="w-full rounded-card"
+      />
+
+      <img
+        src="/images/boaty/logocolors.png"
+        alt="Boaty Logo Colors"
+        class="w-full rounded-card"
+      />
+
+      <img
+        src="/images/boaty/graphics.png"
+        alt="Boaty Graphics"
+        class="w-full rounded-card"
+      />
+    </div>
+  </CaseStudySection>
+</BaseLayout>

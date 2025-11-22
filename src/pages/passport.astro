@@ -1,0 +1,148 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import CaseStudyHero from "../components/CaseStudyHero.vue";
+import CaseStudySection from "../components/CaseStudySection.vue";
+---
+
+<BaseLayout title="Passport of the Future | Portfolio">
+  <CaseStudyHero client:load>
+    <div class="flex flex-col md:flex-row justify-between h-fit mx-auto pt-28">
+      <div class="flex flex-col w-full md:w-[45%]">
+        <div class="flex flex-col">
+          <span class="text-2xl font-medium text-orbit-purple-light m-0"
+            >Case Study</span
+          >
+          <h1 class="text-[44px] font-bold m-0">
+            Passport of<br />the Future
+          </h1>
+        </div>
+
+        <div
+          class="flex justify-start gap-12 my-5 font-medium text-base flex-wrap"
+        >
+          <span>UX/UI Design</span>
+          <span>UX Research</span>
+        </div>
+
+        <div class="flex gap-5 my-5">
+          <div>
+            <p class="font-bold">Year</p>
+            <p>2023</p>
+          </div>
+          <div>
+            <p class="font-bold">Project</p>
+            <p>Passport App</p>
+          </div>
+        </div>
+      </div>
+
+      <img
+        src="/images/passport/Screens1.png"
+        alt="Passport of the Future"
+        class="w-full md:w-1/2 flex justify-center items-center rounded-2xl"
+      />
+    </div>
+
+    <div class="mt-12">
+      <p class="opacity-90 text-lg leading-relaxed">
+        This project was done as a way to better understand services and how we
+        can improve them with new technologies. To start off we had to better
+        understand the users of said services and their struggles with the
+        current iteration of the service, in this case: The Passport and Travel
+        Systems.
+      </p>
+      <p class="opacity-90 text-lg leading-relaxed mt-4 pb-30">
+        Through interviews and research on the typical users and frustrations
+        related to passports and travelling we landed on 4 different user types,
+        or personas.
+      </p>
+    </div>
+  </CaseStudyHero>
+
+  <CaseStudySection client:load>
+    <h2 class="text-3xl font-bold mb-8">User Personas</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-12">
+      <img
+        src="/images/passport/Persona1.png"
+        alt="Persona 1"
+        class="w-full rounded-card"
+      />
+      <img
+        src="/images/passport/Persona4.png"
+        alt="Persona 4"
+        class="w-full rounded-card"
+      />
+      <img
+        src="/images/passport/Persona3.png"
+        alt="Persona 3"
+        class="w-full rounded-card"
+      />
+      <img
+        src="/images/passport/Persona2.png"
+        alt="Persona 2"
+        class="w-full rounded-card"
+      />
+    </div>
+
+    <div class="mb-8">
+      <p class="text-lg leading-relaxed">
+        We also figured out these users' struggles and where the current system
+        could be improved to fix them or make them easier to deal with.
+      </p>
+    </div>
+
+    <h2 class="text-3xl font-bold mb-8">User Journeys</h2>
+    <div class="flex flex-col gap-8 mb-12">
+      <img
+        src="/images/passport/Journey1.png"
+        alt="Journey 1"
+        class="w-full rounded-card"
+      />
+      <img
+        src="/images/passport/Journey2.png"
+        alt="Journey 2"
+        class="w-full rounded-card"
+      />
+      <img
+        src="/images/passport/Journey3.png"
+        alt="Journey 3"
+        class="w-full rounded-card"
+      />
+      <img
+        src="/images/passport/Journey4.png"
+        alt="Journey 4"
+        class="w-full rounded-card"
+      />
+    </div>
+
+    <div class="mb-8">
+      <p class="text-lg leading-relaxed">
+        Upon figuring out how the system could be improved we wanted to develop
+        a new interface for the passport, one that would not only serve as an
+        official document but could also double as a travel companion and record
+        all your most precious moments while traveling.
+      </p>
+    </div>
+
+    <h2 class="text-3xl font-bold mb-8">Interface Design</h2>
+    <div class="flex flex-col gap-8 mb-12">
+      <img
+        src="/images/passport/Screens1.png"
+        alt="Screens 1"
+        class="w-full rounded-card"
+      />
+      <img
+        src="/images/passport/Screens2.png"
+        alt="Screens 2"
+        class="w-full rounded-card"
+      />
+    </div>
+
+    <div class="w-full h-[800px] my-10 rounded-card overflow-hidden">
+      <iframe
+        class="w-full h-full"
+        src="https://www.figma.com/proto/XzWfjuLcEjSw3Gdglgzv7w/Passaporte?embed_host=share&kind=proto&node-id=274-58726&page-id=274%3A57532&scaling=min-zoom&starting-point-node-id=274%3A58776&viewport=598%2C-15422%2C0.46"
+        allowfullscreen></iframe>
+    </div>
+  </CaseStudySection>
+</BaseLayout>

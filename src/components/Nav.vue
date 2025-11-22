@@ -1,6 +1,6 @@
 <template>
-  <nav class="fixed top-0 left-0 right-0 z-50 bg-[#1e1e1e]/80 backdrop-blur-md border-b border-[#676767] w-full px-8 md:px-[253px] py-4">
-    <div class="flex items-center justify-between w-full">
+  <nav class="fixed top-0 left-0 right-0 z-50 bg-[#1e1e1e]/80 backdrop-blur-md border-b border-[#676767] w-full py-4">
+    <div class="max-w-[1100px] mx-auto px-4 flex items-center justify-between">
       <!-- Logo -->
       <a href="/">
         <img src="/logo.svg" alt="Logo" class="w-8 h-11" />

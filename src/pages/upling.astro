@@ -40,28 +40,28 @@ import ProblemSolution from "../components/ProblemSolution.vue";
 
       <img
         src="/images/upling/Upling 1.png"
-        alt="Upling Cover"
-        class="w-full md:w-1/2 flex justify-center items-center"
+        alt=""
+        class="w-full md:w-1/2 flex justify-center items-center rounded-2xl"
       />
     </div>
 
-    <ProblemSolution>
-      <template #problem>
+    <ProblemSolution client:load>
+      <Fragment slot="problem">
         The transition from secondary education is a stressful period for many
         young people, compounded by uncertainty about future paths. Choosing a
         course or career often happens without adequate guidance, leading to
         suboptimal choices and potential dissatisfaction. Existing platforms
-        often lack engaging user experiences, appearing overly serious or
-        having confusing navigation, which exacerbates student anxiety.
-      </template>
-      <template #solution>
+        often lack engaging user experiences, appearing overly serious or having
+        confusing navigation, which exacerbates student anxiety.
+      </Fragment>
+      <Fragment slot="solution">
         Upling is a digital platform conceived during a bachelor's course in
-        graphic/interaction design. Its primary goal is to provide young
-        people with an easy and interactive way to find an educational path
-        that aligns with their needs and goals. While focusing on guiding high
-        school seniors towards higher education or the job market, it also
-        aims to serve college students and professionals seeking new skills.
-      </template>
+        graphic/interaction design. Its primary goal is to provide young people
+        with an easy and interactive way to find an educational path that aligns
+        with their needs and goals. While focusing on guiding high school
+        seniors towards higher education or the job market, it also aims to
+        serve college students and professionals seeking new skills.
+      </Fragment>
     </ProblemSolution>
 
     <div class="mt-12 flex flex-col md:flex-row gap-8 items-start">
