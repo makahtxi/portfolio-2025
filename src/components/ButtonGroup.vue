@@ -1,6 +1,6 @@
 <template>
   <div :class="[
-    ' py-4 flex gap-5', 
+    'py-4 flex gap-5', 
     direction === 'column' ? 'flex-col items-start' : 'flex-row flex-wrap'
   ]">
     <slot />

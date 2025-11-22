@@ -2,6 +2,7 @@
 import BaseLayout from "../layouts/BaseLayout.astro";
 import CaseStudyHero from "../components/CaseStudyHero.vue";
 import CaseStudySection from "../components/CaseStudySection.vue";
+import { Image } from "astro:assets";
 ---
 
 <BaseLayout title="Lagos City Identity | Portfolio">
@@ -18,11 +19,10 @@ import CaseStudySection from "../components/CaseStudySection.vue";
         </div>
 
         <div
-          class="flex justify-start gap-12 my-5 font-medium text-base flex-wrap"
+          class="flex justify-start gap-6 my-5 font-medium text-base flex-wrap"
         >
           <span>Branding</span>
           <span>Graphic Design</span>
-          <span>Product Design</span>
           <span>Wayfinding</span>
           <span>Design System</span>
         </div>
@@ -39,9 +39,12 @@ import CaseStudySection from "../components/CaseStudySection.vue";
         </div>
       </div>
 
-      <img
+      <Image
         src="/images/lagos/Lagos-01.png"
         alt="Lagos City Identity"
+        width={800}
+        height={600}
+        loading="eager"
         class="w-full md:w-1/2 flex justify-center items-center rounded-2xl"
       />
     </div>
@@ -60,198 +63,282 @@ import CaseStudySection from "../components/CaseStudySection.vue";
   <CaseStudySection client:load>
     <div class="flex flex-col gap-8">
       <div class="bg-white rounded-card p-8">
-        <img
+        <Image
           src="/images/lagos/Lagos-02.png"
           alt="Lagos Design"
+          width={1200}
+          height={800}
+          loading="lazy"
           class="w-full"
         />
       </div>
       <div class="bg-white rounded-card p-8">
-        <img
+        <Image
           src="/images/lagos/Lagos-03.png"
           alt="Lagos Design"
+          width={1200}
+          height={800}
+          loading="lazy"
           class="w-full"
         />
       </div>
       <div class="bg-white rounded-card p-8">
-        <img
+        <Image
           src="/images/lagos/Lagos-04.png"
           alt="Lagos Design"
+          width={1200}
+          height={800}
+          loading="lazy"
           class="w-full"
         />
       </div>
       <div class="bg-white rounded-card p-8">
-        <img
+        <Image
           src="/images/lagos/Lagos-05.png"
           alt="Lagos Design"
+          width={1200}
+          height={800}
+          loading="lazy"
           class="w-full"
         />
       </div>
       <div class="bg-white rounded-card p-8">
-        <img
+        <Image
           src="/images/lagos/Lagos-06.png"
           alt="Lagos Design"
+          width={1200}
+          height={800}
+          loading="lazy"
           class="w-full"
         />
       </div>
       <div class="bg-white rounded-card p-8">
-        <img
+        <Image
           src="/images/lagos/Lagos-07.png"
           alt="Lagos Design"
+          width={1200}
+          height={800}
+          loading="lazy"
           class="w-full"
         />
       </div>
       <div class="bg-white rounded-card p-8">
-        <img
+        <Image
           src="/images/lagos/Lagos-08.png"
           alt="Lagos Design"
+          width={1200}
+          height={800}
+          loading="lazy"
           class="w-full"
         />
       </div>
       <div class="bg-white rounded-card p-8">
-        <img
+        <Image
           src="/images/lagos/Lagos-09.png"
           alt="Lagos Design"
+          width={1200}
+          height={800}
+          loading="lazy"
           class="w-full"
         />
       </div>
       <div class="bg-white rounded-card p-8">
-        <img
+        <Image
           src="/images/lagos/Lagos-10.png"
           alt="Lagos Design"
+          width={1200}
+          height={800}
+          loading="lazy"
           class="w-full"
         />
       </div>
       <div class="bg-white rounded-card p-8">
-        <img
+        <Image
           src="/images/lagos/Lagos-11.png"
           alt="Lagos Design"
+          width={1200}
+          height={800}
+          loading="lazy"
           class="w-full"
         />
       </div>
       <div class="bg-white rounded-card p-8">
-        <img
+        <Image
           src="/images/lagos/Lagos-12.png"
           alt="Lagos Design"
+          width={1200}
+          height={800}
+          loading="lazy"
           class="w-full"
         />
       </div>
       <div class="bg-white rounded-card p-8">
-        <img
+        <Image
           src="/images/lagos/Lagos-13.png"
           alt="Lagos Design"
+          width={1200}
+          height={800}
+          loading="lazy"
           class="w-full"
         />
       </div>
       <div class="bg-white rounded-card p-8">
-        <img
+        <Image
           src="/images/lagos/Lagos-14.png"
           alt="Lagos Design"
+          width={1200}
+          height={800}
+          loading="lazy"
           class="w-full"
         />
       </div>
       <div class="bg-white rounded-card p-8">
-        <img
+        <Image
           src="/images/lagos/Lagos-15.png"
           alt="Lagos Design"
+          width={1200}
+          height={800}
+          loading="lazy"
           class="w-full"
         />
       </div>
       <div class="bg-white rounded-card p-8">
-        <img
+        <Image
           src="/images/lagos/Lagos-16.png"
           alt="Lagos Design"
+          width={1200}
+          height={800}
+          loading="lazy"
           class="w-full"
         />
       </div>
       <div class="bg-white rounded-card p-8">
-        <img
+        <Image
           src="/images/lagos/Lagos-17.png"
           alt="Lagos Design"
+          width={1200}
+          height={800}
+          loading="lazy"
           class="w-full"
         />
       </div>
       <div class="bg-white rounded-card p-8">
-        <img
+        <Image
           src="/images/lagos/Lagos-18.png"
           alt="Lagos Design"
+          width={1200}
+          height={800}
+          loading="lazy"
           class="w-full"
         />
       </div>
       <div class="bg-white rounded-card p-8">
-        <img
+        <Image
           src="/images/lagos/Lagos-19.png"
           alt="Lagos Design"
+          width={1200}
+          height={800}
+          loading="lazy"
           class="w-full"
         />
       </div>
       <div class="bg-white rounded-card p-8">
-        <img
+        <Image
           src="/images/lagos/Lagos-20.png"
           alt="Lagos Design"
+          width={1200}
+          height={800}
+          loading="lazy"
           class="w-full"
         />
       </div>
       <div class="bg-white rounded-card p-8">
-        <img
+        <Image
           src="/images/lagos/Lagos-21.png"
           alt="Lagos Design"
+          width={1200}
+          height={800}
+          loading="lazy"
           class="w-full"
         />
       </div>
       <div class="bg-white rounded-card p-8">
-        <img
+        <Image
           src="/images/lagos/Lagos-22.png"
           alt="Lagos Design"
+          width={1200}
+          height={800}
+          loading="lazy"
           class="w-full"
         />
       </div>
       <div class="bg-white rounded-card p-8">
-        <img
+        <Image
           src="/images/lagos/Lagos-23.png"
           alt="Lagos Design"
+          width={1200}
+          height={800}
+          loading="lazy"
           class="w-full"
         />
       </div>
       <div class="bg-white rounded-card p-8">
-        <img
+        <Image
           src="/images/lagos/Lagos-24.png"
           alt="Lagos Design"
+          width={1200}
+          height={800}
+          loading="lazy"
           class="w-full"
         />
       </div>
       <div class="bg-white rounded-card p-8">
-        <img
+        <Image
           src="/images/lagos/Lagos-25.png"
           alt="Lagos Design"
+          width={1200}
+          height={800}
+          loading="lazy"
           class="w-full"
         />
       </div>
       <div class="bg-white rounded-card p-8">
-        <img
+        <Image
           src="/images/lagos/Lagos-26.png"
           alt="Lagos Design"
+          width={1200}
+          height={800}
+          loading="lazy"
           class="w-full"
         />
       </div>
       <div class="bg-white rounded-card p-8">
-        <img
+        <Image
           src="/images/lagos/Lagos-27.png"
           alt="Lagos Design"
+          width={1200}
+          height={800}
+          loading="lazy"
           class="w-full"
         />
       </div>
       <div class="bg-white rounded-card p-8">
-        <img
+        <Image
           src="/images/lagos/Lagos-28.png"
           alt="Lagos Design"
+          width={1200}
+          height={800}
+          loading="lazy"
           class="w-full"
         />
       </div>
       <div class="bg-white rounded-card p-8">
-        <img
+        <Image
           src="/images/lagos/Lagos-29.png"
           alt="Lagos Design"
+          width={1200}
+          height={800}
+          loading="lazy"
           class="w-full"
         />
       </div>

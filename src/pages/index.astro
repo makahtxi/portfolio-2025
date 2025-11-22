@@ -1,33 +1,86 @@
 ---
-import BaseLayout from '../layouts/BaseLayout.astro';
-import HomeItem from '../components/HomeItem.vue';
+import BaseLayout from "../layouts/BaseLayout.astro";
+import ProjectCard from "../components/ProjectCard.vue";
 ---
 
-<BaseLayout title="Pedro Botica">
-  <div class="flex flex-col xl:flex-row gap-8 xl:gap-0 items-center xl:justify-center m-auto w-10/12 h-screen">
-    <div class="h-full flex flex-col justify-end xl:justify-center items-center w-full xl:w-6/12">
-      <div>
-        <h1 class="text-6xl text-center xl:text-left font-semibold mb-2">Hi, I'm Pedro</h1>
-        <h3 class="text-2xl text-center xl:text-left font-regular mb-6">UX/UI Designer & Developer</h3>
-        <p class="text-xl text-center xl:text-left font-regular"></p>
+<BaseLayout title="Pedro Botica - UX/UI Designer">
+  <div class="w-full min-h-screen flex flex-col items-center pb-16">
+    <!-- Hero Section -->
+    <div class="w-10/12 max-w-[1100px] px-4 mt-40">
+      <div class="max-w-9/10 m-auto mb-28">
+        <h1
+          class="text-[58px] font-normal leading-normal tracking-[-1.2px] text-[#212121] mb-0"
+        >
+          Hi, I'm <span class="font-bold">Pedro Botica,</span>
+        </h1>
+        <p class="text-base tracking-[-0.48px] text-black mt-0">
+          a designer who loves creating experiences that enable people to live
+          their most fulfilling lives :)
+        </p>
       </div>
-    </div>
-    <div class="h-full flex flex-col items-center xl:justify-center w-full xl:w-6/12 gap-0">
-      <HomeItem
-        client:load
-        href="/projects"
-        name="PROJECTS"
-      />
-      <HomeItem
-        client:load
-        href="/about"
-        name="ABOUT"
-      />
-      <HomeItem
-        client:load
-        href="/contact"
-        name="CONTACT"
-      />
+
+      <!-- Projects Section -->
+      <div class="max-w-9/10 m-auto flex flex-col w-full">
+        <h2 class="text-2xl font-semibold tracking-[-0.72px] text-black">
+          Case Studies
+        </h2>
+
+        <div class="flex flex-col mt-8 gap-8">
+          <ProjectCard
+            image="/images/Game-logo.png"
+            imageAlt="Board Game"
+            title="Unlocking a social learning experience"
+            description="A board game designed to facilitate social learning and collaborative problem-solving through engaging gameplay mechanics and thoughtful interaction design."
+            link="/board-game"
+          />
+
+          <ProjectCard
+            image="/images/orbit-logo.svg"
+            imageAlt="Orbit Overture"
+            title="Leveraging GenAI in Music Creation"
+            description="An AI-powered music creation tool that empowers musicians and creators to explore new sonic possibilities through generative AI technology and intuitive interface design."
+            link="/orbit"
+          />
+        </div>
+        <h2 class="text-2xl font-semibold tracking-[-0.72px] mt-8 text-black">
+          Other Projects
+        </h2>
+        <div class="flex flex-col mt-8 gap-8">
+          <ProjectCard
+            image="/images/darty-logo.svg"
+            imageAlt="Darty"
+            title="Darty.pt Digital Branding & eCommerce"
+            description="Darty is a french technology retailer looking to make a splash in the portuguese market. They pride themselves in the trust they build with costumers, and their branding and digital presence looks to reflect that."
+            link="/fnac-campaigns"
+            imageContain={true}
+            trackingClass="tracking-[-0.48px]"
+          />
+
+          <ProjectCard
+            image="/images/Upling.png"
+            imageAlt=""
+            title="Upling: Guiding students to higher education"
+            description="Upling is a digital platform conceived during a bachelor's course in graphic/interaction design. Its primary goal is to provide young people with an easy and interactive way to find an educational path that aligns with their needs and goals."
+            link="/upling"
+          />
+
+          <ProjectCard
+            image="/images/passport-logo.png"
+            imageAlt=""
+            title="Passport of the Future"
+            description="This project was done as a way to better understand services and how we can improve them with new technologies. To start off we had to better understand the users of said services and their struggles with the current iteration of the service, in this case: The Passport and Travel Systems. "
+            link="/passport"
+          />
+
+          <ProjectCard
+            image="/images/lagos-logo.png"
+            imageAlt=""
+            title="Nuances - City Identity for Lagos "
+            description="Nuances was my senior group project in my Bachelors. We were tasked with creating the city identity for Lagos by creating a wayfinding system and designing urban furniture for the main plaza. To achieve this we tapped into Lagos history and culture, hoping to strike a balance between refined and free-flowing. "
+            link="/lagos"
+          />
+        </div>
+      </div>
     </div>
   </div>
 </BaseLayout>

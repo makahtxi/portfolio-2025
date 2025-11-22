@@ -3,7 +3,7 @@
     <div class="max-w-[1100px] w-full mx-auto px-4 flex items-start justify-between">
       <!-- Copyright Section -->
       <div class="flex flex-col gap-1 items-start justify-center">
-        <div class="text-white text-xs font-normal whitespace-pre-line">
+        <div class="text-white text-sm font-normal whitespace-pre-line">
           <p class="mb-0">© 2025 Pedro Botica</p>
           <p>UX Designer</p>
         </div>
@@ -14,10 +14,10 @@
         <!-- Sitemap -->
         <div class="flex flex-col gap-1.5 items-start text-white">
           <p class="font-bold text-base mb-0">Sitemap</p>
-          <a href="/" class="text-xs hover:opacity-80 transition-opacity">Homepage</a>
-          <a href="/projects" class="text-xs hover:opacity-80 transition-opacity">Projects</a>
-          <a href="/about" class="text-xs hover:opacity-80 transition-opacity">About</a>
-          <a href="/contact" class="text-xs hover:opacity-80 transition-opacity">Contact</a>
+          <a href="/" class="text-sm hover:opacity-80 transition-opacity">Homepage</a>
+          <a href="/projects" class="text-sm hover:opacity-80 transition-opacity">Projects</a>
+          <a href="/about" class="text-sm hover:opacity-80 transition-opacity">About</a>
+          <a href="/contact" class="text-sm hover:opacity-80 transition-opacity">Contact</a>
         </div>
 
         <!-- Other Links -->
@@ -27,7 +27,7 @@
             href="https://www.linkedin.com/in/pedro-botica-0096761aa/"
             target="_blank"
             rel="noopener noreferrer"
-            class="flex gap-1.5 items-center text-white text-xs hover:opacity-80 transition-opacity"
+            class="flex gap-1.5 items-center text-white text-sm hover:opacity-80 transition-opacity"
           >
             <span>LinkedIn</span>
             <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -35,9 +35,8 @@
             </svg>
           </a>
           <a
-            href="/resume.pdf"
-            target="_blank"
-            class="text-white text-xs hover:opacity-80 transition-opacity"
+            href="/resume"
+            class="text-white text-sm hover:opacity-80 transition-opacity"
           >
             Resume
           </a>
