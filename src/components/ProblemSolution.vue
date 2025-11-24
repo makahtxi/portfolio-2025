@@ -1,5 +1,5 @@
 <template>
-  <div class="grid md:grid-cols-2 gap-8 mt-12">
+  <div class="grid md:grid-cols-2 gap-8 my-16">
     <div>
       <p class="text-xl font-semibold mb-2.5">Problem</p>
       <p class="opacity-90">

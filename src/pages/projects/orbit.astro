@@ -1,65 +1,39 @@
 ---
-import BaseLayout from "../layouts/BaseLayout.astro";
-import CaseStudyHero from "../components/CaseStudyHero.vue";
-import CaseHeader from "../components/CaseHeader.vue";
-import IntroImagesGallery from "../components/IntroImagesGallery.vue";
-import CaseBody from "../components/CaseBody.vue";
-import ContainerFull from "../components/ContainerFull.vue";
-import ContainerHalf from "../components/ContainerHalf.vue";
-import InnerContainerHalf from "../components/InnerContainerHalf.vue";
-import PostItNotes from "../components/PostItNotes.vue";
-import PostItNote from "../components/PostItNote.vue";
-import FeatureList from "../components/FeatureList.vue";
-import FeatureItem from "../components/FeatureItem.vue";
-import ButtonGroup from "../components/ButtonGroup.vue";
-import Button from "../components/Button.vue";
-import ImageGrid from "../components/ImageGrid.vue";
-import ImageWrapper from "../components/ImageWrapper.vue";
-import ImageSquare from "../components/ImageSquare.vue";
-import InlineHighlight from "../components/InlineHighlight.vue";
-import OrbitInput from "../components/OrbitInput.vue";
-import ProblemSolution from "../components/ProblemSolution.vue";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import CaseStudyHero from "../../components/CaseStudyHero.vue";
+import CaseHeader from "../../components/CaseHeader.vue";
+import IntroImagesGallery from "../../components/IntroImagesGallery.vue";
+import CaseBody from "../../components/CaseBody.vue";
+import ContainerFull from "../../components/ContainerFull.vue";
+import ContainerHalf from "../../components/ContainerHalf.vue";
+import InnerContainerHalf from "../../components/InnerContainerHalf.vue";
+import PostItNotes from "../../components/PostItNotes.vue";
+import PostItNote from "../../components/PostItNote.vue";
+import FeatureList from "../../components/FeatureList.vue";
+import FeatureItem from "../../components/FeatureItem.vue";
+import ButtonGroup from "../../components/ButtonGroup.vue";
+import Button from "../../components/Button.vue";
+import ImageGrid from "../../components/ImageGrid.vue";
+import ImageWrapper from "../../components/ImageWrapper.vue";
+import ImageSquare from "../../components/ImageSquare.vue";
+import InlineHighlight from "../../components/InlineHighlight.vue";
+import OrbitInput from "../../components/OrbitInput.vue";
+import ProblemSolution from "../../components/ProblemSolution.vue";
+import ProjectHero from "../../components/ProjectHero.vue";
 ---
 
 <BaseLayout title="Orbit - GenAI Music Creation | Portfolio">
   <CaseStudyHero client:load>
-    <div class="flex flex-col md:flex-row justify-between h-fit mx-auto pt-28">
-      <div class="flex flex-col w-full md:w-[45%]">
-        <div class="flex flex-col">
-          <span class="text-2xl font-medium text-orbit-purple-light m-0"
-            >Case Study</span
-          >
-          <h1 class="text-[44px] font-bold m-0">
-            Leveraging GenAI in Music Creation
-          </h1>
-        </div>
-
-        <div
-          class="flex justify-start gap-12 my-5 font-medium text-base flex-wrap"
-        >
-          <span>UX/UI Design</span>
-          <span>User Research</span>
-          <span>Product Design</span>
-        </div>
-
-        <div class="flex gap-5 my-5">
-          <div>
-            <p class="font-bold">Year</p>
-            <p>2022</p>
-          </div>
-          <div>
-            <p class="font-bold">Client</p>
-            <p>SoundWave Inc.</p>
-          </div>
-        </div>
-      </div>
-
-      <img
-        src="/images/Orbit Thumbnail.png"
-        alt=""
-        class="w-full md:w-1/2 flex justify-center items-center rounded-2xl"
-      />
-    </div>
+    <ProjectHero
+      client:load
+      type="case-study"
+      title="Leveraging GenAI in Music Creation"
+      tags={['UX/UI Design', 'User Research', 'Product Design']}
+      year="2022"
+      projectName="SoundWave Inc."
+      heroImage="/images/Orbit Thumbnail.png"
+      heroImageAlt="Orbit Overture"
+    />
 
     <ProblemSolution client:load>
       <Fragment slot="problem">

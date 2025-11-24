@@ -46,9 +46,7 @@ const props = withDefaults(defineProps<Props>(), {
 });
 
 const isProjectsActive = computed(() => {
-  return props.currentPath === '/projects' || props.currentPath.startsWith('/projects/') ||
-         props.currentPath === '/upling' || props.currentPath === '/orbit' ||
-         props.currentPath === '/fnac-campaigns' || props.currentPath === '/board-game';
+  return props.currentPath === '/projects' || props.currentPath.startsWith('/projects/');
 });
 
 const isAboutActive = computed(() => {

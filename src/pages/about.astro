@@ -1,6 +1,6 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
-import { Image } from 'astro:assets';
+import { Image } from "astro:assets";
 ---
 
 <BaseLayout title="About - Pedro Botica">
@@ -8,7 +8,9 @@ import { Image } from 'astro:assets';
     <div class="w-10/12 max-w-[1100px] px-4 mt-40">
       <!-- Page Header -->
       <div class="max-w-9/10 m-auto mb-16">
-        <h1 class="text-[58px] font-bold leading-normal tracking-[-1.2px] text-[#212121] mb-8">
+        <h1
+          class="text-4xl font-bold leading-normal tracking-[-1.2px] text-[#212121] my-8"
+        >
           About
         </h1>
       </div>
@@ -16,27 +18,43 @@ import { Image } from 'astro:assets';
       <!-- Content Section -->
       <div class="max-w-9/10 m-auto flex flex-col lg:flex-row gap-12">
         <!-- Text Content -->
-        <div class="lg:w-7/12 flex flex-col gap-6 text-base leading-relaxed text-[#212121]">
-          <p>I'm a UX Designer and a Front-End Developer.</p>
+        <div
+          class="lg: flex flex-col gap-6 text-base leading-relaxed text-[#212121]"
+        >
+          <p>
+            I discovered my love for design when I was 13 and I wanted to
+            start a minecraft youtube channel and needed some artwork. I
+            installed photoshop and cinema4D, got myself some textures and
+            whacked away at my first design creation, a youtube banner art for
+            my minecraft channel.
+          </p>
 
-          <p>I first discovered my love for design when I was 13, and I wanted to start a minecraft youtube channel and needed some artwork. I installed photoshop and cinema4D, got myself some textures and whacked away at my first design creation, a youtube banner art for my minecraft channel.</p>
+          <p>
+            When I graduated high school I decided to study design, it was the
+            perfect combination of artistry, science and technology. I
+            particularly fell in love with UX and Product Design, as these field
+            are much more and problem-solving oriented, where every project is a new puzzle to crack
+            and I think I always really liked puzzles.
+          </p>
 
-          <p>When I graduated high school I decided to study design at the University of Lisbon, where I discovered my passion for UX/UI/Interaction Design. For me, it was the perfect combination of artistry, science and technology. So I decided to get a masters' in Interaction Design, which I'm currently writing my thesis for.</p>
-
-          <p>When getting my masters I found out that I didn't really understand a lot about how to actually build the things I designed. I knew a bit of html and css, and the tiniest bit of javascript, but I had no grasp of how to do most things, even an API request was daunting. So I decided I want to understand how all of it work and started learning web-development. I really liked it, it was like building a lego house, except when you place a block in the wrong place the lego is no longer was a house, it's now a dragon and you have to fix it.</p>
-
-          <p>So here we are, if you liked my story (or my work), feel free to <a href="/contact" class="underline hover:text-gray-600 transition-colors">contact me</a>. We can discuss design, technology, music, card games or the weather.</p>
-        </div>
-
-        <!-- Image -->
-        <div class="lg:w-5/12 flex items-start justify-center">
-          <Image
-            src="/me.jpeg"
-            alt="A picture of me"
-            width="400"
-            height="400"
-            class="rounded-lg shadow-sm w-full max-w-md object-cover"
-          />
+          <p>
+            Currently I'm working as a Web/UX Designer at Darty, where I am a part
+            of the eCommerce team. My main focus is on improving the user
+            experience and conversion rates across the website through
+            data-driven design and continuous optimization.
+          </p>
+          <p>
+            When I'm not designing, I am a board game nerd. I love playing and
+            collecting board games, and I even designed my own board game as a
+            <a href="/projects/board-game" class="underline hover:text-gray-600 transition-colors"> university project! </a>
+            <p>
+              You can check out my <a
+                href="/resume"
+                class="underline hover:text-gray-600 transition-colors"
+                >resume here.</a
+              >
+            </p>
+          </p>
         </div>
       </div>
     </div>

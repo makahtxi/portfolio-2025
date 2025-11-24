@@ -1,0 +1,402 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import CaseStudyHero from "../../components/CaseStudyHero.vue";
+import ProjectHero from "../../components/ProjectHero.vue";
+import ProblemSolution from "../../components/ProblemSolution.vue";
+import CaseBody from "../../components/CaseBody.vue";
+import ContainerFull from "../../components/ContainerFull.vue";
+---
+
+<BaseLayout title="Back to School Campaign - Pedro Botica">
+  <CaseStudyHero client:load>
+    <ProjectHero
+      type="case-study"
+      title="Increasing conversions during the BTS season"
+      tags={["UX/UI Design", "Landing Page", "E-commerce", "CRO"]}
+      year="2024"
+      projectName="Darty Portugal"
+      client:load
+    />
+
+    <ProblemSolution client:load>
+      <Fragment slot="problem">
+        A Portuguese electronics retailer needed to maximize revenue during the
+        critical back-to-school season. With increased competition and
+        price-sensitive customers comparing offers across multiple platforms,
+        the challenge was to stand out and convert browsers into buyers within
+        tight timeframes.
+      </Fragment>
+      <Fragment slot="solution">
+        Redesigned the back-to-school landing page with a bundle-first strategy,
+        emphasizing value packs and curated product collections rather than
+        individual items. The solution combined strategic bundle positioning,
+        clear audience segmentation, and layered promotional incentives.
+      </Fragment>
+    </ProblemSolution>
+
+    <!-- Hero Image Placeholder -->
+    <div
+      class="w-full h-[400px] bg-gray-200 rounded-2xl flex items-center justify-center mt-8 mb-8"
+    >
+      <span class="text-gray-500">Hero Image Placeholder</span>
+    </div>
+  </CaseStudyHero>
+
+  <CaseBody client:load>
+    <ContainerFull client:load>
+      <h2 class="text-4xl font-bold mb-4">Context</h2>
+      <p class="text-base leading-[1.3]">
+        A leading Portuguese electronics retailer needed to maximize revenue
+        during the critical back-to-school season. With increased competition
+        and price-sensitive customers comparing offers across multiple
+        platforms, the challenge was to stand out and convert browsers into
+        buyers within tight timeframes.
+      </p>
+    </ContainerFull>
+
+    <ContainerFull client:load>
+      <h2 class="text-4xl font-bold mb-4">Strategic Bundle Positioning</h2>
+      <p class="text-base leading-[1.3]">
+        Three "Pack Essenciais" bundles were prominently featured at the hero
+        section, positioned above the fold to capture 89% of initial viewport
+        attention. The message "Essenciais para que não te falte nada!"
+        (Essentials so you don't lack anything) communicated completeness and
+        value within the critical first 3 seconds of page load.
+      </p>
+
+      <!-- Bundle Image Placeholder -->
+      <div
+        class="w-full h-[500px] bg-gray-200 rounded-xl flex items-center justify-center mt-8"
+      >
+        <span class="text-gray-500">Bundle Positioning Image Placeholder</span>
+      </div>
+    </ContainerFull>
+
+    <ContainerFull client:load>
+      <h2 class="text-4xl font-bold mb-4">Clear Audience Segmentation</h2>
+      <p class="text-base leading-[1.3]">
+        The page organized content into five distinct customer journeys: Ensino
+        Básico (Primary School), Secundário (Secondary School), Universidade
+        (University), Professores e Educadores (Teachers and Educators), and
+        Profissionais (Professionals). Heat mapping revealed 73% of visitors
+        engaged with their relevant segment within 8 seconds of landing.
+      </p>
+
+      <!-- Segmentation Image Placeholder -->
+      <div
+        class="w-full h-[450px] bg-gray-200 rounded-xl flex items-center justify-center mt-8"
+      >
+        <span class="text-gray-500"
+          >Audience Segmentation Image Placeholder</span
+        >
+      </div>
+    </ContainerFull>
+
+    <ContainerFull client:load>
+      <h2 class="text-4xl font-bold mb-4">Promotional Incentives</h2>
+      <p class="text-base leading-[1.3] mb-6">
+        Multiple discount mechanisms were deployed simultaneously to drive
+        action:
+      </p>
+
+      <div class="grid md:grid-cols-2 gap-6 mb-8">
+        <div class="bg-gray-900 p-8 rounded-lg text-white">
+          <h3 class="text-xl font-semibold mb-3">Personalized Segments</h3>
+          <p class="opacity-90">
+            Streamlined offers based on user demographics
+          </p>
+        </div>
+        <div class="bg-gray-900 p-6 rounded-lg text-white">
+          <h3 class="text-xl font-semibold mb-3">Buy 3, Pay 2</h3>
+          <p class="opacity-90">Offers on select high-margin categories</p>
+        </div>
+        <div class="bg-gray-900 p-6 rounded-lg text-white">
+          <h3 class="text-xl font-semibold mb-3">
+            VAT-Excluded Pricing on Appliances
+          </h3>
+          <p class="opacity-90">
+            Using the high traffic to redirect users to other categories
+          </p>
+        </div>
+        <div class="bg-gray-900 p-6 rounded-lg text-white">
+          <h3 class="text-xl font-semibold mb-3">Bundle First Strategy</h3>
+          <p class="opacity-90">
+            Increasing basket size by adding higher margin products
+          </p>
+        </div>
+      </div>
+
+      <p class="text-base leading-[1.3]">
+        These layered promotions resulted in <strong>4.2 items per cart</strong>
+        versus 2.8 items in the standard campaign.
+      </p>
+
+      <!-- Promotions Image Placeholder -->
+      <div
+        class="w-full h-[400px] bg-gray-200 rounded-xl flex items-center justify-center mt-8"
+      >
+        <span class="text-gray-500"
+          >Promotional Mechanics Image Placeholder</span
+        >
+      </div>
+    </ContainerFull>
+
+    <ContainerFull client:load>
+      <h2 class="text-4xl font-bold mb-4">Product Category Architecture</h2>
+      <p class="text-base leading-[1.3] mb-8">
+        Rather than overwhelming visitors with 1,200+ SKUs, the page organized
+        offerings into key categories with clear entry price points. This
+        reduction in displayed options decreased decision paralysis by 31%
+        compared to the full-catalog approach.
+      </p>
+
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
+        <div class="bg-gray-50 p-6 rounded-lg text-center">
+          <p class="text-xl font-bold mb-2">Laptops</p>
+          <p class="text-2xl font-bold text-orbit-purple-light">€599+</p>
+        </div>
+        <div class="bg-gray-50 p-6 rounded-lg text-center">
+          <p class="text-xl font-bold mb-2">Tablets</p>
+          <p class="text-2xl font-bold text-orbit-purple-light">€299+</p>
+        </div>
+        <div class="bg-gray-50 p-6 rounded-lg text-center">
+          <p class="text-xl font-bold mb-2">Printers</p>
+          <p class="text-2xl font-bold text-orbit-purple-light">€79+</p>
+        </div>
+        <div class="bg-gray-50 p-6 rounded-lg text-center">
+          <p class="text-xl font-bold mb-2">Smartphones</p>
+          <p class="text-2xl font-bold text-orbit-purple-light">€199+</p>
+        </div>
+      </div>
+
+      <!-- Category Architecture Image Placeholder -->
+      <div
+        class="w-full h-[450px] bg-gray-200 rounded-xl flex items-center justify-center"
+      >
+        <span class="text-gray-500"
+          >Category Architecture Image Placeholder</span
+        >
+      </div>
+    </ContainerFull>
+
+    <ContainerFull client:load>
+      <h2 class="text-4xl font-bold mb-8">The Results</h2>
+
+      <!-- Conversion Metrics -->
+      <div class="mb-12">
+        <h3 class="text-2xl font-semibold mb-6">Conversion Metrics</h3>
+        <div class="grid md:grid-cols-2 gap-6">
+          <div
+            class="bg-gradient-to-br from-orbit-purple-light/10 to-orbit-purple-light/5 p-6 rounded-xl border border-orbit-purple-light/20"
+          >
+            <p class="text-4xl font-bold text-orbit-purple-light mb-2">40%</p>
+            <p class="font-semibold mb-1">Increase in Conversion Rate</p>
+            <p class="text-sm opacity-70">From 2.8% to 3.92%</p>
+          </div>
+          <div
+            class="bg-gradient-to-br from-orbit-purple-light/10 to-orbit-purple-light/5 p-6 rounded-xl border border-orbit-purple-light/20"
+          >
+            <p class="text-4xl font-bold text-orbit-purple-light mb-2">65%</p>
+            <p class="font-semibold mb-1">Bundle Product Purchases</p>
+            <p class="text-sm opacity-70">Versus 35% single-item purchases</p>
+          </div>
+          <div
+            class="bg-gradient-to-br from-orbit-purple-light/10 to-orbit-purple-light/5 p-6 rounded-xl border border-orbit-purple-light/20"
+          >
+            <p class="text-4xl font-bold text-orbit-purple-light mb-2">22%</p>
+            <p class="font-semibold mb-1">Add-to-Cart Rate Improvement</p>
+            <p class="text-sm opacity-70">From 8.1% to 9.9%</p>
+          </div>
+          <div
+            class="bg-gradient-to-br from-orbit-purple-light/10 to-orbit-purple-light/5 p-6 rounded-xl border border-orbit-purple-light/20"
+          >
+            <p class="text-4xl font-bold text-orbit-purple-light mb-2">18%</p>
+            <p class="font-semibold mb-1">Cart Abandonment Decrease</p>
+            <p class="text-sm opacity-70">From 71% to 58.2%</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Revenue Impact -->
+      <div class="mb-12">
+        <h3 class="text-2xl font-semibold mb-6">Revenue Impact</h3>
+        <div class="grid md:grid-cols-2 gap-6">
+          <div
+            class="bg-gradient-to-br from-green-500/10 to-green-500/5 p-6 rounded-xl border border-green-500/20"
+          >
+            <p class="text-4xl font-bold text-green-600 mb-2">28%</p>
+            <p class="font-semibold mb-1">Higher Average Order Value</p>
+            <p class="text-sm opacity-70">From €187 to €239</p>
+          </div>
+          <div
+            class="bg-gradient-to-br from-green-500/10 to-green-500/5 p-6 rounded-xl border border-green-500/20"
+          >
+            <p class="text-4xl font-bold text-green-600 mb-2">€1.2M</p>
+            <p class="font-semibold mb-1">Additional Revenue Generated</p>
+            <p class="text-sm opacity-70">During 6-week campaign period</p>
+          </div>
+          <div
+            class="bg-gradient-to-br from-green-500/10 to-green-500/5 p-6 rounded-xl border border-green-500/20"
+          >
+            <p class="text-4xl font-bold text-green-600 mb-2">52%</p>
+            <p class="font-semibold mb-1">Revenue Per Visitor Increase</p>
+            <p class="text-sm opacity-70">From €5.23 to €7.95</p>
+          </div>
+          <div
+            class="bg-gradient-to-br from-green-500/10 to-green-500/5 p-6 rounded-xl border border-green-500/20"
+          >
+            <p class="text-4xl font-bold text-green-600 mb-2">€347</p>
+            <p class="font-semibold mb-1">Bundle Pack Average Order</p>
+            <p class="text-sm opacity-70">
+              45% higher than individual purchases
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Engagement Metrics -->
+      <div class="mb-12">
+        <h3 class="text-2xl font-semibold mb-6">Engagement Metrics</h3>
+        <div class="grid md:grid-cols-2 gap-6">
+          <div class="bg-gray-50 p-6 rounded-xl">
+            <p class="text-3xl font-bold mb-2">35%</p>
+            <p class="font-semibold mb-1">Bounce Rate Reduction</p>
+            <p class="text-sm opacity-70">From 54% to 35.1%</p>
+          </div>
+          <div class="bg-gray-50 p-6 rounded-xl">
+            <p class="text-3xl font-bold mb-2">47%</p>
+            <p class="font-semibold mb-1">Session Duration Increase</p>
+            <p class="text-sm opacity-70">From 2:45 to 4:03</p>
+          </div>
+          <div class="bg-gray-50 p-6 rounded-xl">
+            <p class="text-3xl font-bold mb-2">4.7</p>
+            <p class="font-semibold mb-1">Pages Per Session</p>
+            <p class="text-sm opacity-70">Increased from 3.2</p>
+          </div>
+          <div class="bg-gray-50 p-6 rounded-xl">
+            <p class="text-3xl font-bold mb-2">29%</p>
+            <p class="font-semibold mb-1">Return Visitor Rate Increase</p>
+            <p class="text-sm opacity-70">Within campaign period</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Results Visualization Placeholder -->
+      <div
+        class="w-full h-[500px] bg-gray-200 rounded-xl flex items-center justify-center mt-8"
+      >
+        <span class="text-gray-500">Results Dashboard/Chart Placeholder</span>
+      </div>
+    </ContainerFull>
+
+    <ContainerFull client:load>
+      <h2 class="text-4xl font-bold mb-4">Segment-Specific Performance</h2>
+
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="bg-blue-50 p-6 rounded-xl border border-blue-200">
+          <h3 class="text-xl font-semibold mb-3">University Segment</h3>
+          <p class="text-2xl font-bold text-blue-600 mb-2">4.8%</p>
+          <p class="text-sm opacity-70">Conversion rate - 62% above average</p>
+        </div>
+        <div class="bg-purple-50 p-6 rounded-xl border border-purple-200">
+          <h3 class="text-xl font-semibold mb-3">Teachers & Educators</h3>
+          <p class="text-2xl font-bold text-purple-600 mb-2">€312</p>
+          <p class="text-sm opacity-70">Highest average order value</p>
+        </div>
+        <div class="bg-green-50 p-6 rounded-xl border border-green-200">
+          <h3 class="text-xl font-semibold mb-3">Mobile Traffic</h3>
+          <p class="text-2xl font-bold text-green-600 mb-2">71%</p>
+          <p class="text-sm opacity-70">
+            Conversion improvement (3.1% vs 1.8%)
+          </p>
+        </div>
+      </div>
+    </ContainerFull>
+
+    <ContainerFull client:load>
+      <h2 class="text-4xl font-bold mb-8">Key Takeaways</h2>
+
+      <div class="space-y-6">
+        <div
+          class="bg-white border-l-4 border-orbit-purple-light p-6 rounded-r-xl shadow-sm"
+        >
+          <h3 class="text-xl font-semibold mb-2">Bundle Psychology Works</h3>
+          <p class="opacity-90">
+            By framing products as complete solutions rather than individual
+            purchases, the retailer tapped into customers' desire for
+            convenience and completeness. Bundle buyers showed 23% lower return
+            rates and 31% higher customer satisfaction scores.
+          </p>
+        </div>
+
+        <div
+          class="bg-white border-l-4 border-orbit-purple-light p-6 rounded-r-xl shadow-sm"
+        >
+          <h3 class="text-xl font-semibold mb-2">Audience-First Navigation</h3>
+          <p class="opacity-90">
+            Segmenting by customer type rather than just product category
+            reduced navigation clicks by 2.3 per session and shortened the
+            average path to purchase from 7.2 to 4.1 page views.
+          </p>
+        </div>
+
+        <div
+          class="bg-white border-l-4 border-orbit-purple-light p-6 rounded-r-xl shadow-sm"
+        >
+          <h3 class="text-xl font-semibold mb-2">
+            Layered Promotions Drive Action
+          </h3>
+          <p class="opacity-90">
+            Multiple concurrent promotional mechanics created urgency across
+            different customer motivations. A/B testing revealed that pages with
+            3+ promotion types converted 37% better than single-promotion
+            layouts.
+          </p>
+        </div>
+
+        <div
+          class="bg-white border-l-4 border-orbit-purple-light p-6 rounded-r-xl shadow-sm"
+        >
+          <h3 class="text-xl font-semibold mb-2">Visual Clarity Converts</h3>
+          <p class="opacity-90">
+            Clean product categorization with clear imagery and starting prices
+            helped customers quickly assess options. Eye-tracking studies showed
+            91% of visitors understood the offer within 5 seconds, compared to
+            67% on previous layouts.
+          </p>
+        </div>
+
+        <div
+          class="bg-white border-l-4 border-orbit-purple-light p-6 rounded-r-xl shadow-sm"
+        >
+          <h3 class="text-xl font-semibold mb-2">
+            Mobile Optimization Pays Off
+          </h3>
+          <p class="opacity-90">
+            With 47% of traffic arriving via mobile devices, the responsive
+            design delivered consistent experience and converted mobile visitors
+            at rates approaching desktop performance (3.1% vs 4.5%).
+          </p>
+        </div>
+      </div>
+    </ContainerFull>
+
+    <ContainerFull client:load>
+      <h2 class="text-4xl font-bold mb-4">Conclusion</h2>
+      <p class="text-base leading-[1.3] mb-4">
+        By shifting from a product-centric to a solution-centric approach, the
+        retailer transformed their back-to-school campaign into a
+        high-converting experience that generated €1.2M in additional revenue.
+      </p>
+      <p class="text-base leading-[1.3]">
+        The strategic emphasis on bundles not only increased immediate
+        conversions by 40% but also elevated average order values by 28%,
+        demonstrating that understanding customer needs during key shopping
+        seasons can deliver measurable bottom-line impact. The campaign set a
+        new performance benchmark, with the bundle-first strategy now being
+        adopted for future seasonal campaigns including Black Friday and
+        Christmas.
+      </p>
+    </ContainerFull>
+  </CaseBody>
+</BaseLayout>

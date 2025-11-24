@@ -1,11 +1,11 @@
 <template>
-  <article class="flex w-[40%] flex-col">
+  <article class="flex w-[40%] bg-[#1e1e1e] flex-col rounded-sm">
     <a :href="href">
-      <div class="flex items-end gap-4 mb-2">
+      <div class="flex text-white items-end gap-4 px-2 py-2">
         <h2 class="text-lg font-semibold ">{{ name }}</h2>
         <span class="text-sm font-light ">{{ tags }}</span>
       </div>
-      <img :src="img" :alt="name" />
+      <img class="rounded-b-sm" :src="img" :alt="name" />
       
     </a>
   </article>

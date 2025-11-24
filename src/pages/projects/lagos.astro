@@ -1,53 +1,23 @@
 ---
-import BaseLayout from "../layouts/BaseLayout.astro";
-import CaseStudyHero from "../components/CaseStudyHero.vue";
-import CaseStudySection from "../components/CaseStudySection.vue";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import CaseStudyHero from "../../components/CaseStudyHero.vue";
+import CaseStudySection from "../../components/CaseStudySection.vue";
 import { Image } from "astro:assets";
+import ProjectHero from "../../components/ProjectHero.vue";
 ---
 
 <BaseLayout title="Lagos City Identity | Portfolio">
   <CaseStudyHero client:load>
-    <div class="flex flex-col md:flex-row justify-between h-fit mx-auto pt-28">
-      <div class="flex flex-col w-full md:w-[45%]">
-        <div class="flex flex-col">
-          <span class="text-2xl font-medium text-orbit-purple-light m-0"
-            >Design System</span
-          >
-          <h1 class="text-[44px] font-bold m-0">
-            Nuances - City Identity<br />for Lagos
-          </h1>
-        </div>
-
-        <div
-          class="flex justify-start gap-6 my-5 font-medium text-base flex-wrap"
-        >
-          <span>Branding</span>
-          <span>Graphic Design</span>
-          <span>Wayfinding</span>
-          <span>Design System</span>
-        </div>
-
-        <div class="flex gap-5 my-5">
-          <div>
-            <p class="font-bold">Year</p>
-            <p>2023</p>
-          </div>
-          <div>
-            <p class="font-bold">Project</p>
-            <p>Lagos City Identity</p>
-          </div>
-        </div>
-      </div>
-
-      <Image
-        src="/images/lagos/Lagos-01.png"
-        alt="Lagos City Identity"
-        width={800}
-        height={600}
-        loading="eager"
-        class="w-full md:w-1/2 flex justify-center items-center rounded-2xl"
-      />
-    </div>
+    <ProjectHero
+      client:load
+      type="showcase"
+      title="Nuances - City Identity<br />for Lagos"
+      tags={["Branding", "Graphic Design", "Wayfinding", "Design System"]}
+      year="2023"
+      projectName="Lagos City Identity"
+      heroImage="/images/lagos/Lagos-01.png"
+      heroImageAlt="Lagos City Identity"
+    />
 
     <div class="mt-12">
       <p class="opacity-90 text-lg leading-relaxed pb-30">

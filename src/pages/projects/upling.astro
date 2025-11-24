@@ -1,49 +1,24 @@
 ---
-import BaseLayout from "../layouts/BaseLayout.astro";
-import CaseStudyHero from "../components/CaseStudyHero.vue";
-import CaseStudySection from "../components/CaseStudySection.vue";
-import ImageGrid from "../components/ImageGrid.vue";
-import PostItNote from "../components/PostItNote.vue";
-import ProblemSolution from "../components/ProblemSolution.vue";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import CaseStudyHero from "../../components/CaseStudyHero.vue";
+import CaseStudySection from "../../components/CaseStudySection.vue";
+import ImageGrid from "../../components/ImageGrid.vue";
+import PostItNote from "../../components/PostItNote.vue";
+import ProblemSolution from "../../components/ProblemSolution.vue";
+import ProjectHero from "../../components/ProjectHero.vue";
 ---
 
 <BaseLayout title="Upling | Portfolio">
   <CaseStudyHero>
-    <div class="flex flex-col md:flex-row justify-between h-fit mx-auto pt-28">
-      <div class="flex flex-col w-full md:w-[45%]">
-        <div class="flex flex-col">
-          <span class="text-2xl font-medium text-[#96f9dd] m-0">Showcase</span>
-          <h1 class="text-[44px] font-bold m-0">
-            Guiding students<br />to higher education
-          </h1>
-        </div>
-
-        <div
-          class="flex justify-start gap-12 my-5 font-medium text-base flex-wrap"
-        >
-          <span>UX/UI Design</span>
-          <span>User Research</span>
-          <span>Product Design</span>
-        </div>
-
-        <div class="flex gap-5 my-5">
-          <div>
-            <p class="font-bold">Year</p>
-            <p>2022</p>
-          </div>
-          <div>
-            <p class="font-bold">Project</p>
-            <p>Upling</p>
-          </div>
-        </div>
-      </div>
-
-      <img
-        src="/images/upling/Upling 1.png"
-        alt=""
-        class="w-full md:w-1/2 flex justify-center items-center rounded-2xl"
-      />
-    </div>
+    <ProjectHero
+      type="showcase"
+      title="Guiding students<br />to higher education"
+      tags={['UX/UI Design', 'User Research', 'Product Design']}
+      year="2022"
+      projectName="Upling"
+      heroImage="/images/upling/Upling 1.png"
+      heroImageAlt="Upling"
+    />
 
     <ProblemSolution client:load>
       <Fragment slot="problem">
