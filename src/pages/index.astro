@@ -24,7 +24,13 @@ import ProjectCard from "../components/ProjectCard.vue";
         <h2 class="text-2xl font-semibold tracking-[-0.72px] text-black">
           Case Studies
         </h2>
-
+        <ProjectCard
+          image="/images/orbit-logo.svg"
+          imageAlt="Orbit Overture"
+          title="Leveraging GenAI in Music Creation"
+          description="An AI-powered music creation tool that empowers musicians and creators to explore new sonic possibilities through generative AI technology and intuitive interface design."
+          link="/projects/orbit"
+        />
         <div class="flex flex-col mt-8 gap-8">
           <ProjectCard
             image="/images/Game-logo.png"
@@ -33,19 +39,18 @@ import ProjectCard from "../components/ProjectCard.vue";
             description="A board game designed to facilitate social learning and collaborative problem-solving through engaging gameplay mechanics and thoughtful interaction design."
             link="/projects/board-game"
           />
-
-          <ProjectCard
-            image="/images/orbit-logo.svg"
-            imageAlt="Orbit Overture"
-            title="Leveraging GenAI in Music Creation"
-            description="An AI-powered music creation tool that empowers musicians and creators to explore new sonic possibilities through generative AI technology and intuitive interface design."
-            link="/projects/orbit"
-          />
         </div>
         <h2 class="text-2xl font-semibold tracking-[-0.72px] mt-8 text-black">
           Other Projects
         </h2>
         <div class="flex flex-col mt-8 gap-8">
+          <ProjectCard
+            image="/images/Upling.png"
+            imageAlt=""
+            title="Upling: Guiding students to higher education"
+            description="Upling is a digital platform conceived during a bachelor's course in graphic/interaction design. Its primary goal is to provide young people with an easy and interactive way to find an educational path that aligns with their needs and goals."
+            link="/projects/upling"
+          />
           <ProjectCard
             image="/images/darty-logo.svg"
             imageAlt="Darty"
@@ -54,14 +59,6 @@ import ProjectCard from "../components/ProjectCard.vue";
             link="/projects/fnac-campaigns"
             imageContain={true}
             trackingClass="tracking-[-0.48px]"
-          />
-
-          <ProjectCard
-            image="/images/Upling.png"
-            imageAlt=""
-            title="Upling: Guiding students to higher education"
-            description="Upling is a digital platform conceived during a bachelor's course in graphic/interaction design. Its primary goal is to provide young people with an easy and interactive way to find an educational path that aligns with their needs and goals."
-            link="/projects/upling"
           />
 
           <ProjectCard
